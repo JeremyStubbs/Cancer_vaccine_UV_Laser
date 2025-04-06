@@ -11,7 +11,7 @@ Jeremy Stubbs MD<sup>1</sup>
 Immunotherapy, Antibody, Granulocytes, Eosinophils, Neutrophils, NK cells, T-cells, Crispr
 
 **Introduction**  
-Cancer immunotherapy has revolutionized oncology, yet challenges remain in the development of effective, personalized vaccines. This proposal explores the use of lasers to precisely fragment tumor antigens in a controlled grid pattern, to enhance the immunogenicity of an autologous cancer vaccine. The grid size determines the fragment length. Precise molecular disruption exposes correct sized tumor antigens in a structured way, making them more recognizable by the immune system. Existing UV frequency laser technology may allow precise molecular bond disruption. IR and X ray systems are less likely to work but should also be examined.
+Cancer immunotherapy has revolutionized oncology, yet challenges remain in the development of effective, personalized vaccines. This proposal explores the use of lasers to precisely generate tumor cell fragments from pathology slices which can be injected with adjuvants. The idea is to use a controlled grid pattern to generate the optimal sized antigens empirically to enhance the immunogenicity of an autologous cancer vaccine. The grid size determines the fragment length. Precise molecular disruption exposes tumor antigens in a structured way, making them more recognizable by the immune system. This strategy would provide native antigens with all post-translational modifications avoiding the game of trying to predict protein antigens. Furthermore, if feasible (i.e. the laser does not excessively denature antigens), the strategy would be cheap after upfront costs. Existing UV frequency laser technology may allow precise molecular bond disruption. IR and X ray systems are less likely to work but should also be examined.
 
 **Background and Rationale**
 
@@ -25,14 +25,16 @@ Wavelengths and Actual Laser System:
 - 213 nm (Even deeper UV, Nd:YAG 5th harmonic) → More precise fragmentation control.
 - Excimer Lasers (XeCl at 308 nm, ArF at 193 nm) → Used in eye surgery, could be adapted for tumor antigen fragmentation.
 
-Nevertheless, femtosecond (fs) or picosecond (ps) pulsed IR lasers might allow intracellular disruption of organic bonds before heat dissipates. A tuned wavelength (~1300–1500 nm range) may minimize heating but maximize energy absorption at the membrane. Alternatively, low-energy pulses could cause nanobubble formation or localized pressure bursts, rather than full vaporization. Similarly x-ray systems should be examined critically.
+Nevertheless, femtosecond (fs) or picosecond (ps) pulsed IR lasers might allow intracellular disruption of organic bonds before heat dissipates. A tuned wavelength (~1300–1500 nm range) may minimize heating but maximize energy absorption at the membrane. Alternatively, low-energy pulses could cause nanobubble formation or localized pressure bursts, rather than full vaporization.
+
+Similarly x-ray systems should be examined critically.
 
 **Methodology**
 
 1. Tumor Tissue or Cell Lysate Preparation: Tumor cells are harvested from the patient and prepared as a lysate or as intact tissue sections.
     - A biopsy or resected tumor sample is obtained from the patient. There are two options to proceed.
-    - A. Tissue sections are cut into slices like for a pathology slide. Note that these are typically 1-2 cells thick which increases the likelihood of success.
-    - B. A cell lysate is prepared.
+    - 1\. Tissue sections are cut into slices like for a pathology slide approximately 1-2 cells thick to increase the likelihood of success.
+    - 2\. A cell lysate is prepared.
         1. Gentle Detachment of Cells (Breaking Cell-Cell Bonds) – Tumor cells are treated with a mild detergent or enzymatic solution to disrupt extracellular adhesion proteins while keeping individual cells intact. Approaches include:
         2. Non-Ionic Detergents (e.g., low concentrations of Triton X-100, Tween-20, or digitonin) to weaken adhesion without lysing membranes.
         3. EDTA (0.5 - 5 mM) to chelate calcium ions, weakening cadherin-mediated adhesion.
@@ -40,9 +42,10 @@ Nevertheless, femtosecond (fs) or picosecond (ps) pulsed IR lasers might allow i
 2. UV Laser Exposure in a Grid Pattern:
     - A UV laser (e.g., excimer or femtosecond laser) is used to create precise antigen fragments by exposing the sample to a predetermined grid pattern.
     - The grid size determines the fragment length, ideally within the range of ? amino acids, optimizing binding to MHC-I and MHC-II molecules.
-    - Cutting a lysate via a Single-Channel Optical Processing System (SCOPS) is probably the way to do it. The processed cell suspension is introduced into a single long microfluidic channel equipped with multiple optical systems. Each system sequentially analyzes the contents and applies targeted laser pulses to rupture membranes or further fragment the material as needed. The cumulative effect mimics a factory line, ensuring that by the time the sample reaches the end of the channel all intact cells have been lysed and the fragments are reduced to the optimal size for immunogenicity. Automated optical sensors dynamically adjust laser intensity based on real-time analysis. The single output of the optical processing system consists of well-sized tumor-derived antigenic fragments, which are collected and prepared for vaccine formulation.
+    - 1\. The pathology slice is laid upon a stainless steel plate which is cooled to freezing. The laser cuts the slice.
+    - 2\. Cutting a lysate via a Single-Channel Optical Processing System (SCOPS) is probably the way to do it. The processed cell suspension is introduced into a single long microfluidic channel equipped with multiple optical systems. Each system sequentially analyzes the contents and applies targeted laser pulses to rupture membranes or further fragment the material as needed. The cumulative effect mimics a factory line, ensuring that by the time the sample reaches the end of the channel all intact cells have been lysed and the fragments are reduced to the optimal size for immunogenicity. Automated optical sensors dynamically adjust laser intensity based on real-time analysis. The single output of the optical processing system consists of well-sized tumor-derived antigenic fragments, which are collected and prepared for vaccine formulation.
     - Note that the laser can be used to cut the sample several times. In fact, it could cut the pathology slice, which is then turned into a lysate and cut again.
-3. In Vitro and In Situ Applications:
+3. In Vitro and In Situ Applications: both _in vitro_ and _in situ_ approaches should be evaluated
     - _In Vitro_: The fragmented antigens are collected and reinjected with adjuvants or used to pulse autologous dendritic cells (DCs) ex vivo, which are then reintroduced into the patient.
     - _In Situ_: The UV laser (or IR laser) is applied directly to the tumor site in a minimally invasive manner, generating immunogenic fragments in the tumor microenvironment then adjuvants are injected where the laser blasted the tissue.
 4. Immune Activation:
@@ -59,12 +62,12 @@ Nevertheless, femtosecond (fs) or picosecond (ps) pulsed IR lasers might allow i
 
 **Conclusion**
 
-This approach leverages UV lithography technology (and other frequency lasers) for precise antigen fragmentation, enabling the development of an autologous cancer vaccine with enhanced efficacy. By refining the grid pattern and optimizing antigen size, this strategy has the potential to revolutionize personalized cancer immunotherapy. Both in vitro and in situ approaches should be tried.
+This approach leverages UV lithography technology (and other frequency lasers) for precise antigen fragmentation, enabling the development of an autologous cancer vaccine with enhanced efficacy. By refining the grid pattern and optimizing antigen size, this strategy has the potential to revolutionize personalized cancer immunotherapy.
 
 How does this compare to mRNA vaccines?
 
-\-It is more likely to generate complex antigens like proteoglycans, and proteins that undergo extreme post-translational processing.
+\-It is more likely to generate complex antigens like proteoglycans, and proteins that undergo post-translational processing.
 
-\-There is a trade off between broadness of spectrum and specificity and consistency from one dose to another. There may be a advantage with regards to tumor heterogeneity and tumor evolution over time. It is less reproducible than mRNA vaccine. You will get a broader spectrum of epitopes however, it will be much more difficult to provide the same epitope from one dose to another. There may be a disadvantage with regards to getting the exact targeted epitope in every dose.
+\-There is a trade off between \[broadness of spectrum\] and \[specificity and consistency from one dose to another\]. There may be an advantage with regards to tumor heterogeneity and tumor evolution over time. You will get a broader spectrum of epitopes, however, less reproducible than mRNA vaccine. It will be much more difficult to provide the same epitope from one dose to another.
 
 \-The most striking difference is the cost. This is potentially significantly cheaper than mRNA vaccines which means it is much more scalable especially to markets outside the US.
