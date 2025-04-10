@@ -17,7 +17,7 @@ Cancer immunotherapy has revolutionized oncology, yet challenges remain in the d
 
 Past attempts for antigen preparation methods for autologous cancer vaccines have relied on enzymatic digestion or mechanical disruption, which lack the precision and reproducibility required for optimal immune activation. UV laser lithography is widely used in semiconductor fabrication to achieve nanoscale precision (currently the smallest transistor is 2nm which is much smaller than a 20-30 nm ribosome). The same principles can be applied to fragment tumor-associated antigens in a controlled manner, ensuring the generation of appropriately sized peptides for major histocompatibility complex (MHC) presentation.
 
-Ultraviolet frequency is extremely well suited for breaking organic C-C, C-N bonds. In fact, “laser capture microdissection” is a known method of using UV lasers to dissect individual cells. Fluorine-based excimer laser that operate in the UV-C range (around 193 nm), are also used in eye surgery. Deep UV (200–300 nm) can interact with proteins and DNA without massive heat buildup, making it ideal for precise antigen fragmentation. Femtosecond (fs) or picosecond (ps) pulsed UV lasers are especially good at breaking bonds and not disrupting surrounding tissue.
+Ultraviolet frequency is extremely well suited for breaking organic C-C, C-N bonds. In fact, “laser capture microdissection” is a known method of using UV lasers to dissect individual cells. Fluorine-based excimer laser that operate in the UV-C range (around 193 nm), are also used in eye surgery. Deep UV (200–300 nm) can interact with proteins and DNA without massive heat buildup, making it ideal for precise antigen fragmentation. Femtosecond (fs) or picosecond (ps) pulsed UV lasers are especially good at breaking bonds and not disrupting surrounding tissue. You do not need to reduce the size down to 15-20 amino acids which is the length of peptide that MHC molecules present. After phagocytosis, lysosomal processing will do that and select the best antigen candidates. Breaking the cells into bite sized bits is the key.
 
 X-rays are another excellent frequency candidate. In fact, x ray photomasks exist, and lithography systems can achieve nearly the same precision as those that employ UV light. X-rays have significantly less absorption and greater penetration than UV light. For comparison, let’s do a thought experiment. The cell membrane is approximately 10nm thick. Approximately 20-40% of known tumor associated antigens (TAA), are membrane bound. As a safety margin, let’s see the penetration of UV and X rays of 100 nm of tightly wound keratin. By some estimates, the UV (300–350 nm) transmission is ~30–40%, and X-ray (1-10 keV) transmission 99%. But they are higher energy and break bonds much more effectively when they interact.
 
@@ -32,7 +32,9 @@ A comparison of UV vs X rays:
 
 X rays have fewer numbers of interactions, but each interaction is more likely to break a chemical bond. That factor may be so advantageous that the overall efficacy of these frequencies more than compensates for the difficulties in their optical manipulation.
 
-Practical Considerations:
+A similar strategy was tried in China - “Fragment Autoantigens Stimulated T‐Cell‐Immunotherapy (FAST).” \[2\] This was not an inspiration for me; I found it after I started writing my proposal. But, it still is worth mentioning since it kind of uses the same ingredients: light to fragment tissue for a vaccine. I wish them the best of luck. If they used a photomask (something that selectively blocks light to create an etch pattern), then it is pretty much identical to mine, but I see no indication that they used a photomask.
+
+**Practical Considerations:**
 
 Immediately after the UV laser (or X ray) you’ll have a burst of reactive molecular species—free radicals, aldehydes, oxidized lipids, broken protein domains, exposed cysteines, etc. These fragments could rapidly rebind, aggregate, or denature, which could: mask antigenic sites, reduce immune visibility, make the “vaccine” messy or less effective.
 
@@ -65,8 +67,6 @@ Extra Layer: In Situ Tagging While Quenching
 
 • As proteins break apart, their free lysines and N-termini get tagged—simultaneously quenching and targeting the fragments for immunogenicity.
 
-A similar strategy was tried in China - “Fragment Autoantigens Stimulated T‐Cell‐Immunotherapy (FAST).” \[2\] This was not an inspiration for me; I found it after I started writing my proposal. But, it still is worth mentioning since it kind of uses the same ingredients: light to fragment tissue for a vaccine. I wish them the best of luck. If they used a photomask (something that selectively blocks light to create an etch pattern), then it is pretty much identical to mine, but I see no indication that they used a photomask.
-
 You don’t need a $200,000,000 ASML machine to do this. All you need is a reliable UV laser source (a few hundred thousand dollars) and a good UV photomask (a few hundred thousand dollars). Wavelengths and Actual Laser System:
 
 - 266 nm (Deep UV, Nd:YAG 4th harmonic) → High precision, strong protein interactions.
@@ -74,6 +74,36 @@ You don’t need a $200,000,000 ASML machine to do this. All you need is a relia
 - Excimer Lasers (XeCl at 308 nm, ArF at 193 nm) → Used in eye surgery, could be adapted for tumor antigen fragmentation.
 
 IR frequency light interacts with water much more than UV. Thus will produce more heat and scattering. Water strongly absorbs IR radiation because its molecular vibrations (stretching and bending of O-H bonds) match the energy of IR photons. A skin cell is approximately 30 um in diameter, which corresponds to 109,000 water molecules lined up end to end. Near-IR (800 nm+) would get absorbed by tissue water before reaching the target. Nevertheless, femtosecond (fs) or picosecond (ps) pulsed IR lasers further might allow intracellular disruption of organic bonds before heating. Pulsed IR lasers are tuned to a wavelength in the ~1300–1500 nm range may also minimize heating but maximize bond breaking. Alternatively, low-energy pulses could cause nanobubble formation or localized pressure bursts, rather than full vaporization.
+
+What I think would happen is once you injected my cancer vaccine into the body, there’s a bloody little neutrophils would come along and squirt protease everywhere, effectively denaturing it. A better approach might be to pulse APC’s in the lab and then inject those into the patient. Or encapsulate the vaccine in liposomes.
+
+Neutrophils (and other myeloid cells) can indeed respond rapidly to foreign material by releasing reactive oxygen species, proteases, and other enzymes, which could degrade your carefully prepared antigen fragments before they reach antigen-presenting cells (APCs) in a meaningful way. This "bystander destruction" is a known issue in vaccine design, especially with tumor lysate-based vaccines.
+
+Here are three viable strategies to improve the vaccine's efficacy:
+
+1\. Ex Vivo Pulsing of APCs (like dendritic cells):
+
+Pros: Highly controlled, allows precise loading of tumor antigens onto MHC molecules.
+
+Cons: Labor-intensive, expensive, and usually autologous (patient-specific).
+
+Potential Optimization: You could combine this with maturation signals (e.g., LPS, CD40L, poly I:C) to enhance APC activation before reinfusion.
+
+2\. Liposome or Nanoparticle Encapsulation:
+
+Pros: Protects antigens from extracellular degradation, improves delivery to lymph nodes, and can be decorated with targeting ligands (e.g., mannose for dendritic cells).
+
+Cons: Requires formulation work and quality control, but very scalable and compatible with off-the-shelf approaches.
+
+Pro Tip: Co-encapsulate immune adjuvants (e.g., CpG, MPLA) with your antigens to boost the immune response.
+
+3\. Hydrogel or Matrix-Based Slow Release:
+
+Pros: Sustained antigen presentation mimics a persistent infection, allowing better immune training.
+
+Cons: Slightly more invasive depending on the delivery route.
+
+Optional Twist: Use enzymatically responsive hydrogels that degrade in response to MMPs or neutrophil elastase, slowly releasing antigen in inflamed tissue.
 
 **Methodology**
 
@@ -114,6 +144,8 @@ Since this has never been done, we must attempt to infer its feasibility from ex
 Commentary:
 
 Laser capture microdissection (LCM) is highly effective for isolating individual cells or specific regions of tissue. However, it is typically used for anatomical resolution (e.g., entire cells or nuclei), not biochemical fragmentation. That said, the ability of UV lasers—especially excimer and femtosecond-class systems—to break specific covalent bonds is well-documented in material science and microfabrication. Their precision has not been widely tested for molecular-level fragmentation of proteins in a biological context, but the technology does demonstrate proof-of-principle for spatial precision. \[3\] The challenge will be balancing fragmentation versus denaturation, particularly for preserving MHC-relevant epitopes.
+
+**You do not need to reduce the size down to 15-20 amino acids which is the length of peptide that MHC molecules present. After phagocytosis, lysosomal processing will do that and select the best antigen candidates. Breaking the cells into bite sized bits is the key.**
 
 2\. Enzymatic or Hypertonic Autologous Cancer Vaccines: "How well have these lysates been characterized?"
 
