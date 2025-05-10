@@ -157,7 +157,7 @@ Summary of Where mRNA Cancer Vaccine Tech Struggles:
 -Tolerance & Immune Editing: The immune system may be partially or fully tolerized to self-like sequences, and tumors can lose antigen presentation (e.g., via β2M loss). 
 -Quaternary Structures & Cryptic Epitopes: If the mutation lies in a region that’s conformational or buried, it may never be exposed unless processed.
 
-With this strategy you do not need to reduce the fragment size down to 8-11 amino acids, which is the length of peptide that MHC molecules present. After phagocytosis, lysosomal processing will do that and select the best antigen candidates with full post-translational processing. Breaking the cells into bite sized bits is the key and seems fully doable. The natural target for this approach is pathology slices. 
+With this strategy you do not need to reduce the fragment size down to 8-11 amino acids, which is the length of peptide that MHC molecules present. After phagocytosis, lysosomal processing will do that and select the best antigen candidates with full post-translational processing. Breaking the cells into bite sized bits is the key and seems fully doable. The natural target for this approach is pathology slices. Let it be known that I've always had doubts that an 8-11 length peptide sequence can lead to the death of a whole hardy cancer cell. It worked with covid because it was an infection and the MHCI’s presented it like crazy.
 
 Since this has never been done, we must attempt to infer its feasibility from existing experimental techniques. Two relevant examples are: (1) the use of UV laser-based cellular dissection in pathology, and (2) the preparation of autologous vaccines using enzymatic and hypertonic cell lysis and their effectiveness.
 
