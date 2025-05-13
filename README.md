@@ -27,7 +27,7 @@ Ultraviolet frequency is extremely well suited for breaking organic C-C and C-N 
 
 X-rays are another excellent frequency candidate. In fact, x ray photomasks exist, and lithography systems can achieve nearly the same precision as those that employ UV light. X-rays have significantly more energy than UV light. The cell membrane is approximately 10nm thick. Approximately 20-40% of known tumor-associated antigens (TAA) are membrane bound so it is safe to use the outermost portion as the initial target. As a safety margin, let’s examine the penetration of UV and X rays of 10 nm of tightly wound keratin. By some estimates, the UV (300–350 nm) transmission is ~30–40%, and X-ray (1-10 keV) transmission 99%. Less x-rays will be absorbed, but they are higher energy and break bonds much more effectively when they are absorbed.
 
-A comparison of UV vs X rays:
+Table 1. A comparison of UV vs X rays.
 
 |     | **UV Light** | **X-rays** |
 | --- | --- | --- |
@@ -52,6 +52,8 @@ IR frequency light interacts with water much more than UV. Thus it will produce 
 Immediately after the UV laser (or X ray) you’ll have a burst of reactive molecular species—free radicals, aldehydes, oxidized lipids, broken protein domains, exposed cysteines, etc. These fragments could rapidly rebind, aggregate, or denature, which could: mask antigenic sites, reduce immune visibility, make the “vaccine” messy or less effective.
 
 The key may be to quench or stabilize the fragments right as they form, before they start cross-linking or misfolding. There are two ways to handle this: a buffer solution and chemically capping the fragments. You can add the buffer solution to the cells immediately after zapping them or have it there before you zap them. Options are listed below for a “fragmentation buffer”.
+
+Table 2. Fragmentation Buffer Composition and Role.
 
 | **Component** | **Role** |
 | --- | --- |
@@ -152,19 +154,25 @@ Like all experimental cancer vaccine strategies, this could be combined with ach
 
 This vaccine strategy could easily be used in a treatment plan that includes mRNA vaccines, but a head-to-head comparison is in order.
 
-First, let’s discuss the assumptions behind mRNA cancer vaccine technology starting with the questions: how consistent are mutations from patient to patient? (for background information) Is DNA sequencing reliable enough to catch mutations? How accurately can you translate DNA sequence into a neoantigen that will be presented on MHC I?
+First, let’s discuss the assumptions behind mRNA cancer vaccine technology. The idea behind mRNA cancer vaccines is they identify the mutations that are likely to be expressed on MHC I as a result of expression, proteasomal cleavage, transport and MHC I binding. Then of course, the mRNA must at the vaccination site must replicate that. The fundamental questions are: How accurately can you translate DNA sequence into a neoantigen that will be presented on MHC I at the tumor? How accurately can you translate mRNA to the same neoantigen presented on MHC I at the vaccination site?
 
-At the sequence level, some driver mutations (e.g., BRAF V600E, KRAS G12D) are highly consistent across patients with the same cancer type, but most mutations, including passenger mutations, vary significantly due to tumor heterogeneity and patient-specific factors.
+For background, how consistent are mutations from patient to patient? In the COSMIC database there are approximately 25 million unique mutations for 1.5 million samples. At the sequence level, some driver mutations (e.g., BRAF V600E, KRAS G12D) are highly consistent across patients with the same cancer type, but most mutations, including passenger mutations, vary significantly due to tumor heterogeneity and patient-specific factors. That is the combination of mutations for each patient are often highly unique. This magnitude of variation can easily be handled by computers.
+
+Is DNA sequencing reliable enough to catch mutations?
 
 DNA sequencing is reliable enough to trust for both clinical and research purposes, with >95% sensitivity and >99% specificity for high-confidence mutations, provided high-quality samples, sufficient sequencing depth, and robust analysis pipelines are used. COSMIC and TCGA are two well known repositories of known cancer DNA mutations.
 
-Going from a DNA mutation to an unmodified peptide presented on MHC class I is a monumental task due to the multi-step process, biological variability, and imperfect prediction tools. While DNA sequencing and protein translation are highly reliable, steps like proteasomal cleavage and MHC binding predictions are less accurate (70-90%). The pipeline is sufficiently reliable for research and clinical applications (e.g., neoantigen vaccines), but emerging technology like mass spectroscopy based peptidonomics may improve that (though they’ll never show the raw data). AI models predict neoantigens presented on MHC class I with ~50-70% precision and ~60-80% sensitivity for high-confidence candidates, based on mass spectrometry and clinical trial data. MHC binding predictions are the most accurate (80-90% for common HLA alleles), while proteasomal cleavage (70-80%) and TAP transport (60-70%) predictions are less reliable. Integrated pipelines (e.g., MuPeXI, EDGE) achieve reasonable success in clinical settings, with ~30-50% of predicted neoantigens eliciting T-cell responses.
+How reliable are the other steps?
+
+Going from a DNA mutation to an unmodified peptide presented on MHC class I is a monumental task due to the multi-step process, biological variability, and imperfect prediction tools. While DNA sequencing and protein translation are highly reliable, steps like proteasomal cleavage and MHC binding predictions are less accurate (70-90%). The pipeline is sufficiently reliable for research and clinical applications (e.g., neoantigen vaccines), but emerging technology like mass spectroscopy based peptidonomics may improve that (though they’ve never shown the raw data). AI models predict neoantigens presented on MHC class I with ~50-70% precision and ~60-80% sensitivity for high-confidence candidates, based on mass spectrometry and clinical trial data. MHC binding predictions are the most accurate (80-90% for common HLA alleles), while proteasomal cleavage (70-80%) and TAP transport (60-70%) predictions are less reliable. Integrated pipelines (e.g., MuPeXI, EDGE) achieve reasonable success in clinical settings, with ~30-50% of predicted neoantigens eliciting T-cell responses.
 
 Why are there no papers that specifically evaluate DNA sequence to MHC I presentation by mass spectroscopy?
 
 Verifying neoantigens presented on MHC class I by mass spectroscopy seems like a critical preliminary step in developing mRNA-based cancer vaccines, but the absence of papers specifically on this step might reflect that neoantigen prediction is often embedded within broader studies on mRNA vaccine development which focus on clinical outcomes. Foundational tools (NetMHCpan, MHCflurry) and clinical trials (BioNTech’s BNT122, Moderna’s mRNA-4157) demonstrate ~50-70% prediction accuracy, with ~30-50% of predicted neoantigens confirmed immunogenic. The scarcity of standalone papers reflects the field’s focus on integrated pipelines, proprietary methods, and clinical outcomes.
 
-For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens). The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success. The process is reliable enough for clinical use (evidenced by ongoing trials), but variability necessitates careful design and validation.
+For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens). How can they possibly get overlap?
+
+The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success. The process is reliable enough for clinical use (evidenced by ongoing trials), but variability necessitates careful design and validation.
 
 If you believe all of that stuff, let’s continue to a head-to-head presentation.
 
@@ -206,7 +214,7 @@ Summary of Where mRNA Cancer Vaccine Tech Struggles compared to UV Lithography:
 \-Tumor Heterogeneity: Not all cells in a tumor express the same antigen.  
 \-Quaternary Structures & Cryptic Epitopes: If the mutation lies in a region that’s conformational or buried, it may never be exposed unless processed.
 
-Core Conceptual Differences:
+Table 3. Core Conceptual Differences
 
 | **Feature** | **mRNA Cancer Vaccines** | **UV Lithography Vaccine Platform** |
 | --- | --- | --- |
