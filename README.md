@@ -174,7 +174,7 @@ For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccinat
 
 The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success. The process is reliable enough for clinical use (evidenced by ongoing trials), but variability necessitates careful design and validation.
 
-If you believe all of that stuff, let’s continue to a head-to-head presentation.
+In summary, there are significant unknowns like the consistency between MHC I presentation at the tumor from patient to patient, but mRNA vaccines are scientifically plausible. Because of that scientific plausibility and many unknowns, mRNA vaccines should be explored for cancer. Let’s continue to a head-to-head presentation.
 
 Both strategies attempt to generate both MHCI and MHCII response. In both cases, the goal is to train the immune system to recognize cancer specific molecules at both the vaccination site and the tumor. Again, UV generated fragments-based vaccines could easily be used in a treatment plan that includes mRNA vaccines. But in a sentence the difference is: **do you trust your body to get it right with a full variety of antigens but a lower dose of each or do you trust AI and database pipelines to coax the immune system to focus on specific peptide in the tumor by delivering a consistent high dose of them?**
 
