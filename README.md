@@ -146,6 +146,8 @@ This approach leverages lithography technology (lasers + photomask) for precise 
 
 It is similar to _in situ_ vaccination after radiation therapy, something that has shown promising results in early studies. The main differences are the location of light exposure (inside vs outside the patient) and the frequency of light (UV vs Ionizing radiation). Compared to in situ vaccination following radiation therapy the possible advantages are: greater control over antigen size, the option to filter unwanted material, the option to chemically optimize the fragments (optimize immunogenicity, optimize stability of fragments), and the ability to better avoid inflammatory degradation either by chemical optimization (adducts, liposomes, hydrogels) or ex-vivo priming of antigen presenting cells (APCs).
 
+Like all experimental cancer vaccine strategies, this could be combined with acheckpoint inhibitor (like anti-PD-1 or anti-CTLA-4).
+
 **Discussion – Part II**
 
 This vaccine strategy could easily be used in a treatment plan that includes mRNA vaccines, but a head-to-head comparison is in order.
@@ -166,11 +168,13 @@ For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccinat
 
 If you believe all of that stuff, let’s continue to a head-to-head presentation.
 
-Vaccines based on mRNA to the best of my knowledge attempt to generate both MHCI and MHCII response. In both cases, the goal is to find a sequence that is not found anywhere else in the body which you can train the immune system to recognize. Again, this vaccine could easily be used in a treatment plan that includes mRNA vaccines. The main differences can be summarized as:  
-\-It is more likely to generate complex antigens like lipids, proteoglycans, and proteins that undergo post-translational modifications.  
-\-There is a tradeoff between \[broadness of spectrum\] and \[specificity and consistency from one dose to another\]. There may be an advantage with regards to tumor heterogeneity and tumor evolution over time. You will get a broader spectrum of epitopes, however, the epitopes from dose to dose will be less reproducible than an mRNA vaccine.  
-\-There are slight differences in the immune response mechanisms  
-\-The most striking difference is the cost. This is potentially significantly cheaper than mRNA vaccines which means it is much more scalable especially to markets outside the US.
+Both strategies attempt to generate both MHCI and MHCII response. In both cases, the goal is to train the immune system to recognize cancer specific molecules at both the vaccination site and the tumor. Again, UV generated fragments-based vaccines could easily be used in a treatment plan that includes mRNA vaccines. But in a sentence the difference is: **do you trust your body to get it right with a full variety of antigens but a lower dose of each or do you trust AI and database pipelines to coax the immune system to focus on specific peptide in the tumor by delivering a consistent high dose of them?**
+
+Before we go into an extremely in depth immunological discussion, in slightly more detail, the main differences can be summarized as:  
+**\-It is more likely to generate complex antigens like lipids, proteoglycans, and proteins that undergo post-translational modifications.**  
+\-There is a tradeoff between \[broadness of spectrum\] and \[specificity and consistency from one dose to another**\]. There may be an advantage with regards to tumor heterogeneity and tumor evolution over time.** You will get a broader spectrum of epitopes, however, the epitopes from dose to dose will be less reproducible than an mRNA vaccine.  
+**\-There are slight differences in the immune response mechanisms, and this may generate a better MHC II and B cell response but it’s possible that mRNA data pipeline technology can identify antigens for MHC I better than the body can. These differences may provide synergy when the technologies are combined.**  
+**\-The most striking difference is the cost. This is potentially significantly cheaper than mRNA vaccines which means it is much more scalable especially to markets outside the US.**
 
 From a detailed immunologic perspective, to generate a CD 8+ response, APCs at the vaccination site present mainly peptides 8-11 amino acids long on MHC I complexes to immature T cells, though there may be some glycopeptide presentation. In mRNA vaccines, the mRNA is taken up by a wide variety of local cells which then translate it into peptides, some of which are presented on MHCI via a pathway that presents internal peptides in addition to the pathway used by APCs to present external peptides. The presentation of both internal and external peptides relies on lysosomal degradation. mRNA vaccines specifically engineer the resultant peptide to maximize binding to MHC I and MHC II. The mRNA molecule is not (8-11)x3 bases long. It is much longer, and the target sequence is embedded within restriction enzyme targets and specific sequences in such a way to optimize MHC binding. Often multiple separate 8-11 codons are in a single mRNA molecule and multiple mRNA molecules are used. Both internal and external presentation and engineered MHC I binding bode well for mRNA vaccines theoretically, but realistically the body is pretty good at finding targets itself. For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens from DNA mutations). The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline, with additional challenges from tumor heterogeneity and immune evasion. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success.
 
@@ -192,7 +196,7 @@ Summary of advantages of mRNA: more consistent dose every time, engineered MHC b
 
 Summary of advantages of UV lithography: wider variety of antigens, including those with post translational modifications and not proteins, which is particularly good for MHC two and B cells, same processing material for MHC two presentation.
 
-Basically, do you trust your body to get it right with full variety or do you trust AI and database pipelines to coax the immune system to focus on a small part of the tumor?
+**Basically, do you trust your body to get it right with a full variety of antigens but a lower dose of each or do you trust AI and database pipelines to coax the immune system to focus on specific peptide in the tumor by delivering a consistent high dose of them? ?**
 
 **It does not escape me that these are potentially complementary strategies based on the fact that this strategy gets a good B cell and MHC II response, and mRNA may provide the MHC I response. Nor does it escape me that this mechanistic explanation could be used to justify combining in situ vaccination after radiation exposure and mRNA vaccination.**
 
