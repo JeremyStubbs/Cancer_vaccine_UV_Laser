@@ -192,7 +192,7 @@ Summary of advantages of mRNA: more consistent dose every time, engineered MHC b
 
 Summary of advantages of UV lithography: wider variety of antigens, including those with post translational modifications and not proteins, which is particularly good for MHC two and B cells, same processing material for MHC two presentation.
 
-Basically, do you trust your body to get it right with full variety or do you trust AI and database pipelines to coax it to focus on a small part of the tumor?
+Basically, do you trust your body to get it right with full variety or do you trust AI and database pipelines to coax the immune system to focus on a small part of the tumor?
 
 **It does not escape me that these are potentially complementary strategies based on the fact that this strategy gets a good B cell and MHC II response, and mRNA may provide the MHC I response. Nor does it escape me that this mechanistic explanation could be used to justify combining in situ vaccination after radiation exposure and mRNA vaccination.**
 
