@@ -325,15 +325,13 @@ Ultimately, the feasibility depends on how much UV light will scatter through th
 
 **Future Direction/Initial Experiments**
 
-Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here.
+Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here. The most notable variables are:
+-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature
+-The use of light sonication to break up lightly cut (scored cells)
+-Within the fragmentation buffer: before or after exposure, chemical content
+-Chemical variables: stability, immunogenicity, liposomes
 
-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature
-
-The use of light sonication to break up lightly cut (scored cells)
-
-Within the fragmentation buffer: before or after exposure, chemical content
-
-Chemical variables: stability, immunogenicity, liposomes
+One idea that I would like to see tried is cutting the slice while frozen under a thin layer of buffer solution, and transporting it frozen to the patient. Just before injection, it is thawed and sonicated with additional buffer, reagents and adjuvants. Being immobilized in a frozen crystal might stabilize the fragments.
 
 **Works Cited**
 
