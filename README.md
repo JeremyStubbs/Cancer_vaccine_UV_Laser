@@ -208,7 +208,7 @@ First, let’s discuss the assumptions behind mRNA cancer vaccine technology. Th
 
 In summary, there are significant unknowns like the consistency between MHC I presentation at the tumor from patient to patient, but mRNA vaccines are scientifically plausible. Because of that scientific plausibility and many unknowns, mRNA vaccines should be explored for cancer.
 
-Bias disclaimer: Regarding mRNA-4157 clinical trial design, I don’t agree with cherry picked outcomes like progression free survival after complete resection, which yeah depends on a lot of stuff including surgeon performance. I haven't seen any data specifically focusing on separate site recurrence. Furthermore, the sample size of 240 and 260 patients in the phase 3 trials seems grossly insufficient.
+Bias disclaimer: Regarding mRNA-4157 clinical trial design, I don’t agree with cherry picked outcomes like progression free survival after complete resection, which yeah depends on a lot of stuff including surgeon performance. The gold standard has always been and will always be overall survival. Data specifically focusing on separate site recurrence is essential to determine adequate study design. I’ve seen none. Furthermore, the sample size of 240 and 260 patients in the phase 3 trials seems grossly insufficient.
 
 I. Is DNA sequencing reliable enough to catch mutations? How often do cancers in different people have the same mutations?
 
