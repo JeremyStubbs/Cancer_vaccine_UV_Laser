@@ -15,15 +15,17 @@ Cancer immunotherapy has revolutionized oncology, yet challenges remain in the d
 
 **Background and Rationale**
 
-In situ vaccination following radiation therapy represents a promising therapeutic strategy that has demonstrated encouraging clinical outcomes. However, this uncontrolled degradation may result in unpredictable tumor-associated antigen (TAA) size. In addition, the highly inflammatory state post-radiation rich in neutrophils which release digestive enzymes may compromise the chemical integrity of fragments, limiting the precision of the immune response
+In situ vaccination following radiation therapy represents a promising therapeutic strategy that has demonstrated encouraging clinical outcomes. \[5\] However, this is a highly variable process. It’s not clear that radiation produces consistent sized tumor-associated antigen (TAA) fragments. In addition, the highly inflammatory state post-radiation which includes neutrophils who release digestive enzymes may compromise the chemical integrity of fragments, limiting the precision of the immune response
 
-An alternative approach involves excision of the tumor tissue, subjecting it to controlled irradiation ex vivo, followed by purification and chemical treatment of the resulting antigenic debris. This refined material can then be reintroduced into the patient alongside appropriate immunologic adjuvants, enabling greater control over antigen integrity and immunogenicity. The main differences are location of light exposure (inside vs outside the patient) and frequency of light (UV vs Ionizing radiation). Compared to in situ vaccination following radiation therapy the possible advantages are: greater control over antigen size, the option to filter unwanted material, the option to chemically optimize the fragments (optimize immunogenicity, optimize stability of fragments), and the ability to better avoid inflammatory degradation either by chemical optimization (adducts, liposomes, hydrogels) or ex-vivo priming of antigen presenting cells (APCs).
+Past attempts for antigen preparation for autologous cancer vaccines have generally relied on enzymatic digestion or mechanical disruption (sonication) of biopsy samples. This is also relatively crude for its lack of ability to make precise sized fragments that maintain the native form of macromolecules.
 
-Past attempts for antigen preparation for autologous cancer vaccines have relied on enzymatic digestion or mechanical disruption (sonication) of the cells, which by comparison lack the ability to make precise sized fragments that maintain the native form of macromolecules.
+A slight improvement is a strategy called “Fragment Autoantigens Stimulated T‐Cell‐Immunotherapy (FAST).” They used x-rays to kill and fragment tumor cells from a biopsy \[2\] This was not an inspiration for me; I found it after I started writing my proposal. But, it is worth mentioning that it kind of uses the same ingredients: light to fragment tissue for a vaccine, only I think the frequency should be UV and it should use a photomask.
 
-UV laser lithography is widely used in semiconductor fabrication to achieve nanoscale precision (currently the smallest transistor is 2nm which is much smaller than a 20-30 nm ribosome). The same principles can be applied to fragment tumor-associated antigens in a controlled manner, ensuring the generation of appropriately sized glycopeptides that antigen presenting cells (APC) can process and present on major histocompatibility complexes (MHC).
+My novel thought was to use UV lithography. UV lithography is the use of a UV laser with a photomask (something that selectively blocks light) to etch patterns on a substrate. It is widely used in the semiconductor industry. The same principles can be applied to fragment tumor-associated antigens in a controlled manner, ensuring the generation of appropriately sized glycopeptides that antigen presenting cells (APC) can process and present on major histocompatibility complexes (MHC).
 
-Ultraviolet frequency is extremely well suited for breaking organic C-C and C-N bonds. In fact, “laser capture microdissection” is a known method of using UV lasers to dissect individual cells. Because of the nice cuts they make, fluorine-based excimer lasers that operate in the UV-C range (around 193 nm) are also used in eye surgery. Deep UV (200–300 nm) can interact with proteins and DNA without massive heat buildup, making it ideal for precise cellular fragmentation. Femtosecond (fs) or picosecond (ps) pulsed UV lasers are especially good at breaking bonds and not disrupting surrounding tissue.
+Compared to the aforementioned techniques, it may offer greater control over antigen integrity, size and immunogenicity. The main differences between this new approach and in situ vaccination following radiation therapy are location of light exposure (inside vs outside the patient) and frequency of light (UV vs Ionizing radiation). The possible advantages are: greater control over antigen size, the option to filter unwanted material, the option to chemically optimize the fragments (optimize immunogenicity, optimize stability of fragments), and the ability to better avoid inflammatory degradation either by chemical optimization (adducts, liposomes, hydrogels) or ex-vivo priming of antigen presenting cells (APCs).
+
+UV laser lithography is widely used in semiconductor fabrication to achieve nanoscale precision (currently the smallest transistor is 2nm which is much smaller than a 20-30 nm ribosome). The reason I think it can be applied to vaccine preparation is because ultraviolet frequency is extremely well suited for breaking organic C-C and C-N bonds. In fact, “laser capture microdissection” is a known method of using UV lasers to dissect individual cells. Because of the nice cuts they make, fluorine-based excimer lasers that operate in the UV-C range (around 193 nm) are also used in eye surgery. Deep UV (200–300 nm) can interact with proteins and DNA without massive heat buildup, making it ideal for precise cellular fragmentation. Femtosecond (fs) or picosecond (ps) pulsed UV lasers are especially good at breaking bonds and not disrupting surrounding tissue.
 
 X-rays are another excellent frequency candidate. In fact, x ray photomasks exist, and lithography systems can achieve nearly the same precision as those that employ UV light. X-rays have significantly more energy than UV light. The cell membrane is approximately 10nm thick. Approximately 20-40% of known tumor-associated antigens (TAA) are membrane bound so it is safe to use the outermost portion as the initial target. As a safety margin, let’s examine the penetration of UV and X rays of 10 nm of tightly wound keratin. By some estimates, the UV (300–350 nm) transmission is ~30–40%, and X-ray (1-10 keV) transmission 99%. Less x-rays will be absorbed, but they are higher energy and break bonds much more effectively when they are absorbed.
 
@@ -37,9 +39,7 @@ Table 1. A comparison of UV vs X rays.
 
 X rays have fewer numbers of interactions, but each interaction is more likely to break a chemical bond. The overall efficacy of these frequencies may compensate for the difficulties in their optical manipulation.
 
-A similar strategy was tried in China - “Fragment Autoantigens Stimulated T‐Cell‐Immunotherapy (FAST).” \[2\] This was not an inspiration for me; I found it after I started writing my proposal. But, it still is worth mentioning since it kind of uses the same ingredients: light to fragment tissue for a vaccine. I wish them the best of luck. If they used a photomask (something that selectively blocks light to create an etch pattern), then it is pretty much identical to mine, but I see no indication that they used a photomask.
-
-You don’t need a $200,000,000 ASML machine to do this. All you need is a reliable UV laser source (a few hundred thousand dollars) and a good UV photomask (a few hundred thousand dollars). Wavelengths and Actual Laser System:
+You don’t need a $200 million ASML machine to do this. All you need is a reliable UV laser source (a few hundred thousand dollars) and a good UV photomask (a few hundred thousand dollars). Wavelengths and Actual Laser System:
 
 - 266 nm (Deep UV, Nd:YAG 4th harmonic) → High precision, strong protein interactions.
 - 213 nm (Even deeper UV, Nd:YAG 5th harmonic) → More precise fragmentation control.
@@ -49,26 +49,17 @@ IR frequency light interacts with water much more than UV. Thus it will produce 
 
 **Practical Considerations:**
 
-In order to generate enough material for a vaccine, a sizeable biopsy must be taken which can be cut into hundreds or thousands of slices which are treated with the UV laser. The process of preparation, photomask placement, exposure and post-processing must be streamlined.
+The natural target for a lithography system is a thin layer of material. Pathology slices fit that description perfectly. In order to generate enough material for a vaccine, a sizeable biopsy must be taken which can be cut into hundreds or thousands of slices which are treated with the UV laser. The process of preparation, photomask placement, exposure and post-processing must be streamlined. The slice may need to be cut all the way through or simply scored and broken apart later by mechanical means like sonication.
 
-Immediately after the UV laser (or X ray) you’ll have a burst of reactive molecular species—free radicals, aldehydes, oxidized lipids, broken protein domains, exposed cysteines, etc. These fragments could rapidly rebind, aggregate, or denature, which could: mask antigenic sites, reduce immune visibility, make the “vaccine” messy or less effective.
+Immediately after the UV laser (or X ray) you’ll have a burst of reactive molecular species—free radicals, aldehydes, oxidized lipids, broken protein domains, exposed cysteines, etc. These fragments could rapidly rebind, aggregate, or denature, which could: mask antigenic sites, reduce immune visibility, make the “vaccine” messy or less effective. In the short-term, these must be stabilized either chemically or physically by freezing them. In the long-term these need to be chemically stabilized so that they can be given in a vaccine.
 
-The key may be to quench or stabilize the fragments right as they form, before they start cross-linking or misfolding. There are two ways to handle this: a buffer solution and chemically capping the fragments. You can add the buffer solution to the cells immediately after zapping them or have it there before you zap them. Options are listed below for a “fragmentation buffer”.
+If you cut the slices while they are kept at cryogenic temperatures, the bonds may break and not reform until the temperature rises. When you raise the temperature, it will be in the presence of a solution that contains the reagents to chemically neutralize the fragments or lock them into a matrix.
 
-Table 2. Fragmentation Buffer Composition and Role.
+I don’t know enough about organic chemistry to offer a solution for quenching reactive fragments, but the questions you must ask are: Is there any chemical reaction you could use to cap biological molecules, specifically lipids, proteins and large carbohydrates so that they don’t recombine after you cut them with a UV laser? To chemically quench or stabilize the fragments right as they form, before they start cross-linking or misfolding, a buffer solution must be present that contains chemicals that react with the fragments. Options are listed below for a “fragmentation buffer”. While there isn't a single universal "magic bullet" reaction, several chemical strategies could potentially be employed to cap the cut ends of lipids, proteins, and large carbohydrates after UV laser cleavage. The specific reaction and capping agent would need to be carefully chosen based on the type of biomolecule, the likely reactive species generated by the laser, and the desired outcome. For all three types of molecules, having a high concentration of a fast-reacting and specific capping agent present immediately after the laser pulse would be critical for success. Radical scavenging and reactions with newly exposed functional groups (thiols, amines, aldehydes/ketones, reducing ends) appear to be the most promising approaches. To chemically quench or stabilize the fragments right as they form, before they start cross-linking or misfolding, a buffer solution must be present that contains chemicals that react with the fragments. Options are listed below in Table 2. for a “fragmentation buffer”.
 
-| **Component** | **Role** |
-| --- | --- |
-| **N-acetylcysteine (5–10 mM)** | Scavenges ROS, protects thiols |
-| **PEG-NHS (0.5–2 mM)** | Blocks exposed amines, reduces aggregation |
-| **Mannitol or Sorbitol (10–50 mM)** | Hydroxyl radical scavenger, protects macromolecules |
-| **HEPES (25 mM, pH 7.4)** | Stable pH buffer under light/heat |
-| **Protease inhibitor cocktail** | Stops enzymatic degradation |
-| **Optional: low-concentration TLR ligand (e.g. CpG, poly I:C)** | Primes immune activation after uptake |
+Locking them into a matrix for long-term stability might be as easy as thawing them in the presence of superglue. Maybe sonicate it during the thawing process to mechanically distribute the fragments evenly throughout the resulting matrix.
 
-I don’t know enough about organic chemistry to offer a capping solution, but the question you must ask is: Is there any chemical reaction you could use to cap biological molecules, specifically lipids, proteins and large carbohydrates so that they don’t recombine after you cut them with a UV laser? I was thinking about an aromatic plastic group linked by an epoxy. But, while there isn't a single universal "magic bullet" reaction, several chemical strategies could potentially be employed to cap the cut ends of lipids, proteins, and large carbohydrates after UV laser cleavage. The specific reaction and capping agent would need to be carefully chosen based on the type of biomolecule, the likely reactive species generated by the laser, and the desired outcome. For all three types of molecules, having a high concentration of a fast-reacting and specific capping agent present immediately after the laser pulse would be critical for success. Radical scavenging and reactions with newly exposed functional groups (thiols, amines, aldehydes/ketones, reducing ends) appear to be the most promising approaches.
-
-UV laser ablation, especially at 193–248 nm, generates Free radicals, Carbocations, Carbonyls and other oxidized groups, and Unstable double bonds. These reactive fragments can recombine, oxidize further, or crosslink, unless stabilized quickly. So you want fast-reacting capping agents present in the buffer during or immediately after irradiation.
+Again, I am not a chemist, but I’ll speculate on long-term quenching of fragments. UV laser ablation, especially at 193–248 nm, generates free radicals, carbocations, carbonyls and other oxidized groups, and unstable double bonds. These reactive fragments can recombine, oxidize further, or crosslink, unless they are stabilized quickly. So you want fast-reacting capping agents present in the buffer during irradiation or during thawing.
 
 1\. Proteins – Capping Free Amines, Thiols, and Radicals  
 After UV exposure, proteins can be left with:  
@@ -116,6 +107,17 @@ NEM or iodoacetamide
 Hydroxylamine or borohydride  
 Trolox or BHT
 
+Table 2. Fragmentation Buffer Composition and Role.
+
+| **Component** | **Role** |
+| --- | --- |
+| **N-acetylcysteine (5–10 mM)** | Scavenges ROS, protects thiols |
+| **PEG-NHS (0.5–2 mM)** | Blocks exposed amines, reduces aggregation |
+| **Mannitol or Sorbitol (10–50 mM)** | Hydroxyl radical scavenger, protects macromolecules |
+| **HEPES (25 mM, pH 7.4)** | Stable pH buffer under light/heat |
+| **Protease inhibitor cocktail** | Stops enzymatic degradation |
+| **Optional: low-concentration TLR ligand (e.g. CpG, poly I:C)** | Primes immune activation after uptake |
+
 One advantage of this strategy is the option to enrich the sample – remove unwanted parts so that you are left with more cancer cells which give a more targeted immune response. You can remove both cellular and non-cellular parts.
 
 Removing non-cancerous cells might be useful, maybe with targeted excision with the UV optical system itself operating like a solid beam not a grid.
@@ -126,11 +128,9 @@ A pre-treatment with collagenase might be helpful.
 
 Another advantage of this strategy is the option to chemically modify the debris for optimal immunogenicity and stability. You could chemically link the fragments to an immune stimulant. This is different from the stability chemistry mentioned above.
 
-I stumbled across this article “Tumor Cell Membrane‐Based Vaccines: A Potential Boost for Cancer Immunotherapy.” It is research (also out of China) about creating autologous cancer vaccines. They used sonication to break up the cells which they then combined with cholesterol or whatever to make hybrid liposomes that contained TAAs. \[4\] It got me thinking about my idea. What I think would happen is once you injected my cancer vaccine into the body is those bloody little neutrophils would come along and squirt protease everywhere, effectively denaturing it.
+Another option for chemical stability and biological compatibility is to incorporate the fragments into liposomes. There is precedent for this, see “Tumor Cell Membrane‐Based Vaccines: A Potential Boost for Cancer Immunotherapy.” It is research (also out of China) about creating autologous cancer vaccines with liposomes. They used sonication to break up the cells which they then combined with cholesterol or whatever to make hybrid liposomes that contained TAAs. \[4\]
 
-A better approach might be to pulse APC’s in the lab and then inject those into the patient. Or encapsulate the vaccine in liposomes.
-
-Neutrophils (and other myeloid cells) can indeed respond rapidly to foreign material by releasing reactive oxygen species, proteases, and other enzymes, which could degrade your carefully prepared antigen fragments before they reach antigen-presenting cells (APCs) in a meaningful way. This "bystander destruction" is a known issue in vaccine design, especially with tumor lysate-based vaccines.
+Neutrophils (and other myeloid cells) can indeed respond rapidly to foreign material by releasing reactive oxygen species, proteases, and other enzymes, which could degrade carefully prepared antigen fragments before they reach antigen-presenting cells (APCs) in a meaningful way. This "bystander destruction" is a known issue in vaccine design, especially with tumor lysate-based vaccines.
 
 Here are three viable strategies to improve the vaccine's efficacy:
 
@@ -169,21 +169,22 @@ Optional Twist: Use enzymatically responsive hydrogels that degrade in response 
     - A UV laser (e.g., excimer or femtosecond laser) or X ray laser with a photomask is used to create precise antigen fragments by exposing the sample to a predetermined grid pattern.
     - The pathology slice could be cut while frozen or thawed. Like the size of the fragments, this must be determined empirically along with when to introduce the fragmentation buffer.
     - Note that the laser can be used to cut the sample several times. In fact, it could cut the pathology slice, which is then turned into a lysate and cut again.
-3. Fragmentation Buffer: added before or immediately after. Non-ionic detergents (e.g., low concentrations of Triton X-100, Tween-20, or digitonin), EDTA, and must contain chemical reagents to prevent recombination.
-4. Gentle sonication to fragment the cut/scored cells.
-5. Optional: The buffer solution contains components necessary for liposome formation (triacyl glycerides). Form liposomes through known methods like Azafari method.
+3. Fragmentation Buffer: added before or immediately after and contains chemical reagents to prevent recombination.
+4. Optional: Thawing and Gentle Sonication to fragment the cut/scored cells.
+5. Optional: Form liposomes through known methods like Azafari method. The buffer solution contains components necessary for liposome formation (triacyl glycerides).
 6. Optional: Collect and optionally filter or centrifuge to isolate desired particle size range.
 7. Optional: chemical modification of fragments
 
 • Use biotin-NHS, PEG-mannose-NHS, or Fc-tagged PEGs during the soak.
 
-• As proteins break apart, their free lysines and N-termini get tagged—simultaneously quenching and targeting the fragments for immunogenicity.
+• As proteins break apart, their free lysines and N-termini get tagged—simultaneously quenching and targeting the fragments for immunogenicity.  
+• Lock the fragments into a matrix
 
-1. The fragmented antigens are collected and reinjected with adjuvants or used to pulse autologous dendritic cells (DCs) ex vivo, which are then reintroduced into the patient.
-2. Immune Activation:
-    - The processed antigens are presented to T cells, initiating an immune response against tumor-specific epitopes.
-    - Co-administered **adjuvants** enhance dendritic cell activation and antigen presentation. A TLR agonist (like CpG DNA, poly-IC, or MPLA) would boost innate immune activation, drawing in antigen-presenting cells. GM-CSF could be injected locally to recruit dendritic cells, ensuring efficient antigen pickup.
-    - A **checkpoint inhibitor** (like anti-PD-1 or anti-CTLA-4) could be combined for even stronger T cell activation.
+1. Reinject fragments with adjuvants or pulse autologous dendritic cells (DCs) ex vivo, which are then reintroduced into the patient.
+2. Immune Activation:  
+    • The processed antigens are presented to T cells, initiating an immune response against tumor-specific epitopes.  
+    • Co-administered **adjuvants** enhance dendritic cell activation and antigen presentation. A TLR agonist (like CpG DNA, poly-IC, or MPLA) would boost innate immune activation, drawing in antigen-presenting cells. GM-CSF could be injected locally to recruit dendritic cells, ensuring efficient antigen pickup.  
+    • A **checkpoint inhibitor** (like anti-PD-1 or anti-CTLA-4) could be combined for even stronger T cell activation.
 
 **Desired Outcomes**
 
@@ -194,7 +195,7 @@ Optional Twist: Use enzymatically responsive hydrogels that degrade in response 
 
 **Discussion – Part I – Justification and Checkpoint Inhibitors**
 
-This approach leverages lithography technology (lasers + photomask) for precise antigen fragmentation, enabling the development of an autologous cancer vaccine. I think this is a sufficiently unique idea that is logically sound and therefore must be tried.
+This approach leverages lithography technology (lasers + photomask) for precise antigen fragmentation, enabling the development of an autologous cancer vaccine. I think this is a sufficiently unique idea that is just plausible enough to warrant trying.
 
 It is similar to _in situ_ vaccination after radiation therapy, something that has shown promising results in early studies. The main differences are the location of light exposure (inside vs outside the patient) and the frequency of light (UV vs Ionizing radiation). Compared to in situ vaccination following radiation therapy the possible advantages are: greater control over antigen size, the option to filter unwanted material, the option to chemically optimize the fragments (optimize immunogenicity, optimize stability of fragments), and the ability to better avoid inflammatory degradation either by chemical optimization (adducts, liposomes, hydrogels) or ex-vivo priming of antigen presenting cells (APCs).
 
@@ -206,9 +207,9 @@ This vaccine strategy could easily be used in a treatment plan that includes mRN
 
 First, let’s discuss the assumptions behind mRNA cancer vaccine technology. The idea behind mRNA cancer vaccines is they identify the mutations in DNA that are likely to result in a 8-11 length peptide presented on MHC I as a result of expression, proteasomal cleavage, transport and MHC I binding. Then of course, the mRNA must at the vaccination site must replicate that. The fundamental questions which I hope to answer by the end of this section are: How accurately can you translate DNA sequence into a neoantigen that will be presented on MHC I at the tumor? How accurately can you translate mRNA to the same neoantigen presented on MHC I at the vaccination site?
 
-In summary, there are significant unknowns like the consistency between MHC I presentation at the tumor from patient to patient, but mRNA vaccines are scientifically plausible. Because of that scientific plausibility and many unknowns, mRNA vaccines should be explored for cancer.
+To summarize the following long-winded discussion, there are significant unknowns like will two patients with the same MHC genotype but different lysosomal genes present the same peptides? But mRNA vaccines are scientifically plausible. Because of that scientific plausibility, mRNA vaccines should be explored for cancer.
 
-Bias disclaimer: Regarding mRNA-4157 clinical trial design, I don’t agree with cherry picked outcomes like progression free survival after complete resection, which yeah depends on a lot of stuff including surgeon performance. The gold standard has always been and will always be overall survival. Data specifically focusing on separate site recurrence is essential to determine adequate study design. I’ve seen none. Furthermore, the sample size of 240 and 260 patients in the phase 3 trials seems grossly insufficient.
+Bias disclaimer: Regarding mRNA-4157 clinical trial design, I don’t agree with cherry picked outcomes like progression free survival after complete resection, which yeah depends on a lot of stuff including surgeon performance. The gold standard has always been and will always be overall survival. They have not released that data or data specifically focusing on separate site vs local recurrence (including upstream lymph nodes) which is essential to determine adequate study design. Furthermore, the sample size of 240 and 260 patients in the phase 3 trials seems grossly insufficient.
 
 I. Is DNA sequencing reliable enough to catch mutations? How often do cancers in different people have the same mutations?
 
@@ -220,15 +221,15 @@ II. How reliable are the other steps?
 
 Going from a DNA mutation to an unmodified peptide presented on MHC class I is a monumental task due to the multi-step process, biological variability, and imperfect prediction tools. While DNA sequencing and protein translation are highly reliable, the other steps predictions are less accurate (70-90%). AI models predict neoantigens presented on MHC class I with ~50-70% precision and ~60-80% sensitivity for high-confidence candidates, based on mass spectrometry and clinical trial data. MHC binding predictions are the most accurate (80-90% for common HLA alleles), while proteasomal cleavage (70-80%) and TAP transport (60-70%) predictions are less reliable. Overall, the pipeline is sufficiently reliable for research and clinical applications (e.g., neoantigen vaccines), and emerging technology like mass spectroscopy based peptidonomics may improve it. That might all be true, but the whole process seems like a shot in the dark without enough data transparency.
 
-There are billions of combinations of MHC, but with computers it may be possible to estimate the structure of the presenting domain. You must estimate coding domains of the millions of possible cancer mutations, then estimate the lysosome cleavage into peptides, then you must correlate the diversity of peptides with that diversity of MHC structures. Those numbers are multiplicatively enormous but maybe still estimable with supercomputers. But it’s not just numbers that we are dealing with. Biology at the single cell level adds complexity. Take a database like NetMHCpan or NetMHCIIpan, which list peptides known to be presented on different MHCs. These are based on a wide variety of experimental data like mass spectroscopy and binding affinity. The caveat is that mass spect depends on isolating a fully folded MHC complex from a single cell. Elution data must look at only peptides coming from the MHC complex and not any of the other thousands/millions of surface proteins. This is not a highly reliable process, and those limitations add further error to the calculations.
+There are billions of combinations of MHC, but with computers it may be possible to estimate the structure of the presenting domain. You must estimate coding domains of the millions of possible cancer mutations, then estimate the lysosome cleavage into peptides, then you must correlate the diversity of peptides with that diversity of MHC structures. Those numbers are multiplicatively enormous but maybe still estimable with supercomputers.
 
-AI is widely used in this process. Since I already talked about NetMHCpan, let’s look at MHC binding as an example of how AI is being used to improve the process. AI can predict which peptides are likely to bind to specific MHC alleles by using algorithms to find patterns between elution data and MHC DNA sequence. AI can also use more explicit algorithms like “Position-Specific Scoring Matrices” which are based on the frequency of amino acids at each position in known binding peptides. But these are limited by the accuracy of their training set data, the elution and mass spect data. Increasingly the training endpoint is clinical outcome not this data. For example, integrated pipelines (e.g., MuPeXI, EDGE) achieve reasonable success in clinical settings, with ~30-50% of predicted neoantigens eliciting T-cell responses. AI algorithms require vast training data which they use to get incremental improvements. True they are not starting from zero, with the NetMHCpan, but the whole process seems like a shot in the dark without enough data transparency. For example, why are there no papers that specifically evaluate DNA sequence to MHC I presentation by mass spectroscopy? I would at least like an admission that it is an ongoing process of incremental improvement in the algorithm and an estimate of how many patients it will take to perfect.
+One fair criticism is databases like NetMHCpan or NetMHCIIpan, which list peptides known to be presented on different MHCs, are based on a wide variety of experimental data like mass spectroscopy and binding affinity, not the gold standard for this sort of data: T cell activation assays. Mass spect and elution data usually depend on isolating a fully folded MHC complex from a group of cells. This process may denature the complex and require computational deconvolution because it does not look at a uniform population of one MHC on a single cell. So far as I can tell there has never been a confirmatory study in which MHC complexes and peptides are randomly selected from the database to evaluate accuracy via T cell activation assays. The T cells would be generated by in vitro pulsing a culture with the peptides long enough until they generate an immune response. Then those T cells would be used to test specific MHC/peptide combinations. These criticisms aren’t meant to dismiss mRNA tech – the data used to make the database is probably good enough – just to maintain scientific honesty. There should be a confirmatory study of the database, and the lack of it seems scientifically dishonest.
 
-III. Why ARE there no papers that specifically evaluate DNA sequence to MHC I presentation by mass spectroscopy?
+But the absence of confirmatory papers might reflect that neoantigen prediction is often embedded within broader studies on mRNA vaccine development which focus on clinical outcomes. The scarcity of standalone papers reflects the field’s focus on integrated pipelines, proprietary methods, and clinical outcomes. It might be counterproductive and slow down progress.
 
-Verifying neoantigens presented on MHC class I by mass spectroscopy seems like a critical preliminary step in developing mRNA-based cancer vaccines, but the absence of papers specifically on this step might reflect that neoantigen prediction is often embedded within broader studies on mRNA vaccine development which focus on clinical outcomes. Mass spectroscopy peptidonomics (to find what is actually bound to MHC I on tumor cells) is an incredibly complex process that is not yet widely accepted. Foundational tools (NetMHCpan, MHCflurry) and clinical trials (BioNTech’s BNT122, Moderna’s mRNA-4157) demonstrate ~50-70% prediction accuracy, with ~30-50% of predicted neoantigens confirmed immunogenic. The scarcity of standalone papers reflects the field’s focus on integrated pipelines, proprietary methods, and clinical outcomes.
+AI is widely used in this process. Since I already talked about NetMHCpan, let’s look at MHC binding as an example of how AI is being used to improve the process. AI can predict which peptides are likely to bind to specific MHC alleles by using algorithms to find patterns between elution data and MHC DNA sequence. AI can also use more explicit algorithms like “Position-Specific Scoring Matrices” which are based on the frequency of amino acids at each position in known binding peptides. But these are limited by the accuracy of their training set data, the elution and mass spect data. Increasingly the training endpoint is clinical outcome not this data. For example, integrated pipelines (e.g., MuPeXI, EDGE) achieve reasonable success in clinical settings, with ~30-50% of predicted neoantigens eliciting T-cell responses. AI algorithms require vast training data which they use to get incremental improvements. True they are not starting from zero, with the NetMHCpan, but again there is a lack of scientific honesty, specifically transparency. Why are there no mathematical estimates for how long it will take before we can expect the algorithms to improve? I would at least like an admission that it is an ongoing process of incremental improvement in the algorithm and an estimate of how many patients it will take to perfect.
 
-IV. For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens). How can they possibly get overlap?
+III. For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens). How can they possibly get overlap?
 
 The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success. The process is reliable enough for clinical use (evidenced by ongoing trials), but variability necessitates careful design and validation.
 
@@ -307,6 +308,8 @@ Is this strategy possible?
 
 Since this has never been done, we must attempt to infer its feasibility from existing experimental techniques. Two relevant examples are: (1) the use of UV laser-based cellular dissection in pathology, and (2) the preparation of autologous vaccines using enzymatic and hypertonic cell lysis and their effectiveness.
 
+The two big questions are: Can you initially generate fragments via UV lithography of a certain size that don’t lose their native structure or immediately degrade? Can you keep them stable long enough to be injected? I have a feeling that if you could do both of those things, you would be some sort of immune response.
+
 1\. UV Laser Cellular Dissection (Laser Capture Microdissection): "How well does this technique work in producing small sections of the cell?"
 
 Commentary:
@@ -325,11 +328,11 @@ Ultimately, the feasibility depends on how much UV light will scatter through th
 
 **Future Direction/Initial Experiments**
 
-Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here. The most notable variables are:
--Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature
--The use of light sonication to break up lightly cut (scored cells)
--Within the fragmentation buffer: before or after exposure, chemical content
--Chemical variables: stability, immunogenicity, liposomes
+Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here. The most notable variables are:  
+\-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature  
+\-The use of light sonication to break up lightly cut (scored cells)  
+\-Within the fragmentation buffer: before or after exposure, chemical content  
+\-Chemical variables: stability, immunogenicity, liposomes
 
 One idea that I would like to see tried is cutting the slice while frozen under a thin layer of buffer solution, and transporting it frozen to the patient. Just before injection, it is thawed and sonicated with additional buffer, reagents and adjuvants. Being immobilized in a frozen crystal might stabilize the fragments.
 
