@@ -11,7 +11,7 @@ Jeremy Stubbs MD<sup>1</sup>
 Immunotherapy, Antibody, Granulocytes, Eosinophils, Neutrophils, NK cells, T-cells, Crispr
 
 **Introduction**  
-Cancer immunotherapy has revolutionized oncology, yet challenges remain in the development of effective, personalized vaccines. This proposal explores the use of lithography technology to generate tumor cell fragments from pathology slices. Lithography is the use of collimated light i.e. lasers with a photomask to etch a pattern on a substrate. Chemically optimized and purified fragments would be injected with adjuvants. The photomask grid pattern dictates fragment size whose optimal dimensions can be determined empirically. Precise molecular disruption exposes native tumor antigens that retain all post-translational modifications unlike another leading cancer vaccine approach - mRNA. Furthermore, if feasible the strategy would be cheap and scalable. Existing technology allows for UV, X-ray, and possibly IR systems to be evaluated.
+Cancer immunotherapy has revolutionized oncology, yet challenges remain in the development of effective, personalized vaccines. This proposal explores the use of lithography technology to generate tumor cell fragments from pathology slices. Lithography is the use of collimated light i.e. lasers with a photomask to etch a pattern on a substrate. Chemically optimized and purified fragments would be injected with adjuvants. The photomask grid pattern dictates fragment size whose optimal dimensions can be determined empirically. Precise molecular disruption exposes native tumor antigens that retain all post-translational modifications unlike another leading cancer vaccine approach – mRNA. Furthermore, if feasible the strategy would be cheap and scalable. Existing technology allows for UV, X-ray, and possibly IR systems to be evaluated.
 
 **Background and Rationale**
 
@@ -28,14 +28,6 @@ Compared to the aforementioned techniques, it may offer greater control over ant
 UV laser lithography is widely used in semiconductor fabrication to achieve nanoscale precision (currently the smallest transistor is 2nm which is much smaller than a 20-30 nm ribosome). The reason I think it can be applied to vaccine preparation is because ultraviolet frequency is extremely well suited for breaking organic C-C and C-N bonds. In fact, “laser capture microdissection” is a known method of using UV lasers to dissect individual cells. Because of the nice cuts they make, fluorine-based excimer lasers that operate in the UV-C range (around 193 nm) are also used in eye surgery. Deep UV (200–300 nm) can interact with proteins and DNA without massive heat buildup, making it ideal for precise cellular fragmentation. Femtosecond (fs) or picosecond (ps) pulsed UV lasers are especially good at breaking bonds and not disrupting surrounding tissue.
 
 X-rays are another excellent frequency candidate. In fact, x ray photomasks exist, and lithography systems can achieve nearly the same precision as those that employ UV light. X-rays have significantly more energy than UV light. The cell membrane is approximately 10nm thick. Approximately 20-40% of known tumor-associated antigens (TAA) are membrane bound so it is safe to use the outermost portion as the initial target. As a safety margin, let’s examine the penetration of UV and X rays of 10 nm of tightly wound keratin. By some estimates, the UV (300–350 nm) transmission is ~30–40%, and X-ray (1-10 keV) transmission 99%. Less x-rays will be absorbed, but they are higher energy and break bonds much more effectively when they are absorbed.
-
-Table 1. A comparison of UV vs X rays.
-
-|     | **UV Light** | **X-rays** |
-| --- | --- | --- |
-| **Tissue Penetration** | Poor (microns at most) | Excellent (millimeters to cm) |
-| **Precision/Control** | High with lasers | Lower spatial precision (difficult to collimate and reflect/refract) |
-| **Damage Type** | Milder photochemistry, DNA damage | Deep ionization, crosslinking, fragmentation |
 
 X rays have fewer numbers of interactions, but each interaction is more likely to break a chemical bond. The overall efficacy of these frequencies may compensate for the difficulties in their optical manipulation.
 
@@ -95,28 +87,6 @@ Capping Strategies:
 Sodium borohydride (NaBH4) or cyanoborohydride: reduces aldehydes to stable alcohols.  
 Aniline derivatives or hydrazides: form Schiff bases or hydrazones with reducing ends.  
 Acetylation or methylation: cap hydroxyls.
-
-Buffer Additives for General Radical and ROS Quenching  
-You can add the following to your buffer before or during UV exposure:  
-DTT or TCEP: thiol-based reducing agents  
-Ascorbic acid: antioxidant  
-Methionine: radical scavenger  
-Spin traps: for stable radical adducts  
-EDTA: chelates metals that catalyze ROS formation  
-NEM or iodoacetamide  
-Hydroxylamine or borohydride  
-Trolox or BHT
-
-Table 2. Fragmentation Buffer Composition and Role.
-
-| **Component** | **Role** |
-| --- | --- |
-| **N-acetylcysteine (5–10 mM)** | Scavenges ROS, protects thiols |
-| **PEG-NHS (0.5–2 mM)** | Blocks exposed amines, reduces aggregation |
-| **Mannitol or Sorbitol (10–50 mM)** | Hydroxyl radical scavenger, protects macromolecules |
-| **HEPES (25 mM, pH 7.4)** | Stable pH buffer under light/heat |
-| **Protease inhibitor cocktail** | Stops enzymatic degradation |
-| **Optional: low-concentration TLR ligand (e.g. CpG, poly I:C)** | Primes immune activation after uptake |
 
 One advantage of this strategy is the option to enrich the sample – remove unwanted parts so that you are left with more cancer cells which give a more targeted immune response. You can remove both cellular and non-cellular parts.
 
@@ -186,13 +156,6 @@ Optional Twist: Use enzymatically responsive hydrogels that degrade in response 
     • Co-administered **adjuvants** enhance dendritic cell activation and antigen presentation. A TLR agonist (like CpG DNA, poly-IC, or MPLA) would boost innate immune activation, drawing in antigen-presenting cells. GM-CSF could be injected locally to recruit dendritic cells, ensuring efficient antigen pickup.  
     • A **checkpoint inhibitor** (like anti-PD-1 or anti-CTLA-4) could be combined for even stronger T cell activation.
 
-**Desired Outcomes**
-
-- Precision control over antigen size, optimizing immune recognition.
-- Increased reproducibility compared to enzymatic digestion methods.
-- Enhanced T cell activation due to efficient antigen processing and presentation.
-- Potential for personalized, autologous cancer vaccines tailored to individual patients.
-
 **Discussion – Part I – Justification and Checkpoint Inhibitors**
 
 This approach leverages lithography technology (lasers + photomask) for precise antigen fragmentation, enabling the development of an autologous cancer vaccine. I think this is a sufficiently unique idea that is just plausible enough to warrant trying.
@@ -201,143 +164,193 @@ It is similar to _in situ_ vaccination after radiation therapy, something that h
 
 Like all experimental cancer vaccine strategies, this could be combined with a checkpoint inhibitor (like anti-PD-1 or anti-CTLA-4).
 
-**Discussion – Part II – mRNA Vaccines Scientific Basis**
+**Discussion – Part II: Scientific Basis of mRNA Cancer Vaccines**
 
-This vaccine strategy could easily be used in a treatment plan that includes mRNA vaccines, but a head-to-head comparison is in order. **The main difference between a UV lithography vaccine and mRNA vaccine is probably heterogeneity vs dose. I stand firmly, though more than anything that these are not mutually exclusive strategies that could be used together synergistically.**
+This vaccine strategy could easily complement a treatment plan involving mRNA vaccines, but a head-to-head comparison is warranted. The fundamental distinction between UV lithography-based vaccines and mRNA vaccines lies in antigen heterogeneity versus dose precision. That said, these approaches are not mutually exclusive—they could synergize when used together.
 
-First, let’s discuss the assumptions behind mRNA cancer vaccine technology. The idea behind mRNA cancer vaccines is they identify the mutations in DNA that are likely to result in a 8-11 length peptide presented on MHC I as a result of expression, proteasomal cleavage, transport and MHC I binding. Then of course, the mRNA must at the vaccination site must replicate that. The fundamental questions which I hope to answer by the end of this section are: How accurately can you translate DNA sequence into a neoantigen that will be presented on MHC I at the tumor? How accurately can you translate mRNA to the same neoantigen presented on MHC I at the vaccination site?
+Assumptions Behind mRNA Cancer Vaccines
 
-To summarize the following long-winded discussion, there are significant unknowns like will two patients with the same MHC genotype but different lysosomal genes present the same peptides? But mRNA vaccines are scientifically plausible. Because of that scientific plausibility, mRNA vaccines should be explored for cancer.
+mRNA cancer vaccines are predicated on the following biological assumptions:
 
-Bias disclaimer: Regarding mRNA-4157 clinical trial design, I don’t agree with cherry picked outcomes like progression free survival after complete resection, which yeah depends on a lot of stuff including surgeon performance. The gold standard has always been and will always be overall survival. They have not released that data or data specifically focusing on separate site vs local recurrence (including upstream lymph nodes) which is essential to determine adequate study design in phase 2 studies. Maybe phase 3 will be better.
+1. Neoantigen Prediction: Mutations in tumor DNA give rise to novel peptides (8–11 amino acids) that may be presented on MHC I.
+2. Synthetic Mimicry: These neoantigens can be encoded by mRNA and expressed at the vaccination site, where they are processed and presented similarly.
 
-I. Is DNA sequencing reliable enough to catch mutations? How often do cancers in different people have the same mutations?
+This leads to two fundamental questions:
 
-DNA sequencing is reliable enough to trust for both clinical and research purposes, with >95% sensitivity and >99% specificity for high-confidence mutations, provided high-quality samples, sufficient sequencing depth, and robust analysis pipelines are used. COSMIC and TCGA are two well known repositories of known cancer DNA mutations.
+- How accurately can we predict which DNA mutations will lead to peptides that are actually presented on MHC I at the tumor site?
+- How reliably does mRNA vaccination replicate that same antigen presentation on MHC I at the vaccination site?
 
-In the COSMIC database there are approximately 25 million unique mutations for 1.5 million samples. At the sequence level, some driver mutations (e.g., BRAF V600E, KRAS G12D) are highly consistent across patients with the same cancer type, but most mutations, including passenger mutations, vary significantly due to tumor heterogeneity and patient-specific factors. The combination of mutations for each patient are often highly unique.
+In summary, while significant unknowns persist—such as whether two patients with the same HLA genotype but different lysosomal processing genes present the same peptides—mRNA vaccines remain scientifically plausible, justifying their continued exploration in oncology.
 
-II. How reliable are the other steps?
+Part of my motivation for writing the section is because there is exactly no published criticism of the scientific basis for using mRNA technology for cancer vaccination. I present several logically valid criticisms of the mRNA technology which should be in the general discussion. It may be a promising technology, but it needs to be evaluated with scientific integrity, not sycophant fanboying. There are no papers that evaluate DNA to MHC predictive abilities outside of clinical response. So far the clinical trials have hinged on cherry picked outcomes like progression free survival after complete resection, which depends on a lot of stuff including surgeon performance. The gold standard has always been and will always be overall survival. Data specifically focusing on separate site recurrence vs local recurrence within 5 cm of the excised tumor or in an upstream lymph node is essential to determine adequate study design. I do have a lingering discomfort though because protein subunit vaccines work for plenty of infectious disease. The papers that compare mRNA to peptide vaccines in the context of cancer (like the clinical trials) focus on endpoints other than overall survival in small samples (like 6 rodents). It would be horrible if mRNA technology worked in phase 3 studies then fell short in phase 4 studies, which is why strict scientific standards should be placed on these sorts of studies. Hopefully, future study designs will address these gaps.
 
-Going from a DNA mutation to an unmodified peptide presented on MHC class I is a monumental task due to the multi-step process, biological variability, and imperfect prediction tools. While DNA sequencing and protein translation are highly reliable, the other steps predictions are less accurate (70-90%). AI models predict neoantigens presented on MHC class I with ~50-70% precision and ~60-80% sensitivity for high-confidence candidates, based on mass spectrometry and clinical trial data. MHC binding predictions are the most accurate (80-90% for common HLA alleles), while proteasomal cleavage (70-80%) and TAP transport (60-70%) predictions are less reliable. Overall, the pipeline is sufficiently reliable for research and clinical applications (e.g., neoantigen vaccines), and emerging technology like mass spectroscopy based peptidonomics may improve it. That might all be true, but the whole process seems like a shot in the dark without enough data transparency.
+I. DNA Sequencing Reliability and Mutation Reproducibility
 
-There are billions of combinations of MHC, but with computers it may be possible to estimate the structure of the presenting domain. You must estimate coding domains of the millions of possible cancer mutations, then estimate the lysosome cleavage into peptides, then you must correlate the diversity of peptides with that diversity of MHC structures. Those numbers are multiplicatively enormous but maybe still estimable with supercomputers.
+Modern DNA sequencing (e.g., WGS/WES) is reliable, with >95% sensitivity and >99% specificity for high-confidence mutations when sample quality and sequencing depth are sufficient.
 
-One fair criticism is databases like NetMHCpan or NetMHCIIpan, which list peptides known to be presented on different MHCs, are based on a wide variety of experimental data like mass spectroscopy and binding affinity, not the gold standard for this sort of data: T cell activation assays. Mass spect and elution data usually depend on isolating a fully folded MHC complex from a group of cells. This process may denature the complex and require computational deconvolution because it does not look at a uniform population of one MHC on a single cell. So far as I can tell there has never been a confirmatory study in which MHC complexes and peptides are randomly selected from the database to evaluate accuracy via T cell activation assays. The T cells would be generated by in vitro pulsing a culture with the peptides long enough until they generate an immune response. Then those T cells would be used to test specific MHC/peptide combinations. These criticisms aren’t meant to dismiss mRNA tech – the data used to make the database is probably good enough – just to maintain scientific honesty. There should be a confirmatory study of the database, and the lack of it seems scientifically dishonest.
+- Databases like COSMIC and TCGA catalogue millions of mutations. COSMIC, for example, includes ~25 million mutations across 1.5 million samples.
+- Some driver mutations (e.g., _BRAF V600E_, _KRAS G12D_) are conserved across patients. However, passenger mutations are highly variable, meaning that each patient's mutational landscape is typically unique.
 
-But the absence of confirmatory papers might reflect that neoantigen prediction is often embedded within broader studies on mRNA vaccine development which focus on clinical outcomes. The scarcity of standalone papers reflects the field’s focus on integrated pipelines, proprietary methods, and clinical outcomes. It might be counterproductive and slow down progress.
+II. Predicting Antigen Presentation
 
-AI is widely used in this process. Since I already talked about NetMHCpan, let’s look at MHC binding as an example of how AI is being used to improve the process. AI can predict which peptides are likely to bind to specific MHC alleles by using algorithms to find patterns between elution data and MHC DNA sequence. AI can also use more explicit algorithms like “Position-Specific Scoring Matrices” which are based on the frequency of amino acids at each position in known binding peptides. But these are limited by the accuracy of their training set data, the elution and mass spect data. Increasingly the training endpoint is clinical outcome not this data. For example, integrated pipelines (e.g., MuPeXI, EDGE) achieve reasonable success in clinical settings, with ~30-50% of predicted neoantigens eliciting T-cell responses. AI algorithms require vast training data which they use to get incremental improvements. True they are not starting from zero, with the NetMHCpan, but again there is a lack of scientific honesty, specifically transparency. Why are there no mathematical estimates for how long it will take before we can expect the algorithms to improve? I would at least like an admission that it is an ongoing process of incremental improvement in the algorithm and an estimate of how many patients it will take to perfect.
+The multi-step process from DNA mutation to MHC I peptide presentation includes:
 
-III. For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens). How can they possibly get overlap?
+- Translation
+- Proteasomal cleavage
+- TAP transport
+- MHC binding
 
-The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success. The process is reliable enough for clinical use (evidenced by ongoing trials), but variability necessitates careful design and validation.
+Each step introduces variability:
 
-Let’s continue with a head-to-head presentation.
+| Step | Prediction Accuracy |
+| --- | --- |
+| MHC Binding (NetMHCpan) | 80–90% (common HLAs) |
+| Proteasomal Cleavage | 70–80% |
+| TAP Transport | 60–70% |
+| Overall Pipeline | ~50–70% precision, ~60–80% sensitivity for top candidates |
 
-**Discussion – Part III – mRNA Vaccines Comparison**
+While sufficient for early clinical applications, this remains a highly probabilistic pipeline. Mass spectrometry-based peptidomics is helping refine these predictions, but:
 
-Both strategies attempt to generate both MHCI and MHCII response. In both cases, the goal is to train the immune system to recognize cancer specific molecules at both the vaccination site and the tumor. Again, UV generated fragments-based vaccines could easily be used in a treatment plan that includes mRNA vaccines. But in a sentence the difference is: **Do you trust your body to get it right with a full variety of antigens but a lower dose of each or do you trust AI and database pipelines to coax the immune system to focus on specific peptide in the tumor by delivering a consistent high dose of them?**
+Key criticism: Current databases (e.g., NetMHCpan) rely heavily on mass spec and elution data, rather than the gold standard—T-cell activation assays. Ideally, database entries should be validated using functional assays where in vitro–generated T cells are used to confirm that predicted MHC-peptide complexes elicit a response. To date, no large-scale confirmatory study appears to exist.
 
-Before we go into an extremely in-depth immunological discussion, in slightly more detail, the main differences can be summarized as:  
-**\-It is more likely to generate complex antigens like lipids, proteoglycans, and proteins that undergo post-translational modifications.**  
-\-There is a tradeoff between \[broadness of spectrum\] and \[specificity and consistency from one dose to another**\]. There may be an advantage with regards to tumor heterogeneity and tumor evolution over time.** You will get a broader spectrum of epitopes, however, the epitopes from dose to dose will be less reproducible than an mRNA vaccine.  
-**\-There are slight differences in the immune response mechanisms, and this may generate a better MHC II and B cell response but it’s possible that mRNA data pipeline technology can identify antigens for MHC I better than the body can. These differences may provide synergy when the technologies are combined.**  
-**\-The most striking difference is the cost. This is potentially significantly cheaper than mRNA vaccines which means it is much more scalable especially to markets outside the US.**
+One possible reason for this is that neoantigen prediction is embedded in broader pipelines—where outcomes like clinical efficacy are the focus, not mechanistic accuracy. This may limit transparency and slow foundational validation.
 
-From a detailed immunologic perspective, to generate a CD 8+ response, APCs at the vaccination site present mainly peptides 8-11 amino acids long on MHC I complexes to immature T cells, though there may be some glycopeptide presentation. In mRNA vaccines, the mRNA is taken up by a wide variety of local cells which then translate it into peptides, some of which are presented on MHCI via a pathway that presents internal peptides in addition to the pathway used by APCs to present external peptides. The presentation of both internal and external peptides relies on lysosomal degradation. mRNA vaccines specifically engineer the resultant peptide to maximize binding to MHC I and MHC II. The mRNA molecule is not (8-11)x3 bases long. It is much longer, and the target sequence is embedded within restriction enzyme targets and specific sequences in such a way to optimize MHC binding. Often multiple separate 8-11 codons are in a single mRNA molecule and multiple mRNA molecules are used. Both internal and external presentation and engineered MHC I binding bode well for mRNA vaccines theoretically, but realistically the body is pretty good at finding targets itself. For mRNA cancer vaccines, peptide presentation must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by tumor cells presenting endogenous neoantigens from DNA mutations). The vaccination site relies on mRNA uptake, translation, and DC processing, which is relatively reliable but limited by cleavage and immunogenicity predictions. The tumor site follows the complex DNA-to-MHC pipeline, with additional challenges from tumor heterogeneity and immune evasion. Differences in proteasomal cleavage between DCs and tumor cells are a key hurdle, but solutions like minimal epitope design and robust neoantigen selection improve success.
+III. Dual Presentation: Tumor vs Vaccination Site
 
-This strategy relies on natural processing mechanisms to select an immunogenic sequence that will get presentation whereas mRNA relies on massive data pipelines integrated with artificial intelligence (AI) reasoning. I have no way to compare the two, but what I can say is there is a tradeoff of variety vs dose. With this strategy all you have to worry about is getting the tumor cells into bite sized bits. This strategy depends on the use of hundreds to thousands of pathology slices, but the whole process will be streamlined. You will get a larger variety of antigens, but the individual amount of any particular antigen will be low within a dose and the antigens may be highly variable from dose to dose. There may be an advantage with regards to tumor heterogeneity and tumor evolution over time, but epitopes from dose to dose will be less reproducible than an mRNA vaccine.
+In mRNA vaccines, antigen presentation occurs in two places:
 
-Major challenges exist in both mRNA and this strategy in creating a CD8 response. Viral antigens like spike protein in covid are highly immunogenic and highly expressed on MHCI and come with all sorts of other inflammatory signals from infected cells – not so in cancer. T cell receptors (both CD 4+ and CD 8+) develop to tolerate self-antigens which TAAs fundamentally are. Also, CD 8+ TCRs require MHC I presentation (regardless of whether surface or internal), which is often greatly reduced in tumor cells. Furthermore, tumors are highly heterogeneous and constantly evolving and easily ignore immune attacks.
+1. Vaccination site: mRNA is taken up by APCs (especially DCs), translated, and the encoded peptides are presented on MHC I.
+2. Tumor site: Tumor cells present neoantigens derived from mutated DNA.
 
-The real difference lies in B cell and MHC II responses. B cell receptors recognize fully folded post-translationally modified proteins. An activated B cell has various actions including the production of antibodies. B cells are also APCs so they can phagocytose stuff and present it via MHC II to naïve CD 4+ T cells. Other APCs include B cells, dendritic cells, macrophages, etc. MHC II presents a wider range of material than MHC I (including very often glycopeptides) and larger peptides up to 25 amino acids long. But similar to MHC I they present material that has been lysosomally processed to the T cell receptor. Mature CD4+ T cells migrate to the tumor where they interact with resident or migrated APCs there to coordinate CD 8+ and B cell responses, partly via local cytokines. While tumors sometimes can be coaxed into expressing MHCII (e.g. with interferon), this is considered a minor factor.
+Overlap is non-trivial, due to:
 
-Short linear peptides coded by mRNA vaccines cannot mimic quaternary structure with post translational modifications. Quaternary structure of a BCR-recognizable domain often involves multiple chains folded and interchain bonded together. And post-translational modifications are likely present in something large enough to be recognized by a B cell receptor. B cell targets most likely have to be external antigens that are not folded into the center of the surface protein complex. But many of the best surface TAAs are post-translationally modified. mRNA vaccines may have elicited a B cell response for covid spike protein because it was secreted from infected cells. Spike protein is a well-studied protein that didn't really change much from strain to covid strain and it is so huge that finding an external unmodified contiguous chain of amino acids was comparatively easy. The problem of finding a unique external contiguous unmodified sequence is much larger for cancer, but possibly doable whereas B cells will have no problem viewing UV lithography generated fragments.
+- Variability in cleavage patterns between tumor cells and DCs
+- Differences in peptide processing environments
+- Immune evasion at the tumor site
 
-Concerning MHC II presentation, mRNA technology has an advantage of engineered binding optimization (as with MHC I). This strategy may attain comparable MHCII presentation efficiency of chimeric proteins used by mRNA technology if the right adjuvants and chemical optimization or liposomes/nanoparticles are used. Experimental work is needed to optimize the strategy whereas mRNA is a mature technology. This strategy has the advantage of the presentation of a broader range of antigens. MHC II presents a wider range of material than MHC I (including very often glycopeptides) and larger peptides up to 25 amino acids long, so compared to MHC I, MHC II may even better address tumor heterogeneity.
+Despite these hurdles, techniques like minimal epitope design and optimized mRNA sequences improve the odds of overlap, justifying continued development.
 
-For mRNA cancer vaccines, peptide presentation on MHC II must occur twice: at the vaccination site (by APCs, particularly DCs, processing mRNA-encoded neoantigens) and at the tumor site (by separate APCs). The idea that an APC at the vaccine site will take up the produced protein and process and present it and an APC within tumor will take up necrotic debris process it and present the same thing with any efficiency seems improbable. In this strategy the same material and process is used for MHC II presentation at both the vaccination site and tumor. This probably gives better cross presentation and antigen sharing because the same stuff gets processed the same way.
+**Discussion – Part III: Comparative Immunologic Analysis**
 
-In both strategies, the MHC II response is limited by the ability of APCs to enter the tumor and pick up antigens for presentation. An effective immune response is also limited because the immune system may be partially or fully tolerized to self-like sequences, and tumors can lose antigen presentation (e.g., via β2M loss). Lastly, again, tumors are highly heterogeneous and constantly evolving and easily ignore immune attacks.
+Both UV-fragment-based and mRNA vaccines aim to elicit robust CD8+ and CD4+ T cell responses, ultimately enabling immune surveillance of the tumor. The key difference lies in their design philosophy:
 
-Summary of advantages of mRNA: more consistent dose every time, engineered MHC binding both one and two, internal expression which may increase MHC one presentation.
+mRNA Vaccines: Trust artificial intelligence and curated databases to guide the immune system toward specific tumor targets with consistent, high-dose antigen delivery.
 
-Summary of advantages of UV lithography: wider variety of antigens, including those with post translational modifications and not proteins, which is particularly good for MHC two and B cells, same processing material for MHC two presentation.
+UV Fragmentation Vaccines: Trust the body’s antigen-processing machinery to recognize targets naturally from a broad, heterogeneous antigen pool, albeit at lower dose per epitope and with less batch-to-batch consistency.
 
-**Basically, do you trust your body to get it right with a full variety of antigens but a lower dose of each or do you trust AI and database pipelines to coax the immune system to focus on specific peptide in the tumor by delivering a consistent high dose of them?**
+Key Comparative Points
 
-**It does not escape me that these are potentially complementary strategies based on the fact that this strategy gets a good B cell and MHC II response, and mRNA may provide the MHC I response. Nor does it escape me that this mechanistic explanation could be used to justify combining in situ vaccination after radiation exposure and mRNA vaccination.**
-
-Summary of Where mRNA Cancer Vaccine Tech Struggles compared to UV Lithography:  
-\-PTM Ignorance: mRNA vaccines produce canonical proteins — the cell machinery determines PTMs, and current design pipelines don’t fully predict or manipulate them.  
-\-Antigen Localization: Many tumor neoantigens are intracellular, requiring MHC-I processing rather than antibody response.  
-\-Tumor Heterogeneity: Not all cells in a tumor express the same antigen.  
-\-Quaternary Structures & Cryptic Epitopes: If the mutation lies in a region that’s conformational or buried, it may never be exposed unless processed.
-
-Table 3. Core Conceptual Differences
-
-| **Feature** | **mRNA Cancer Vaccines** | **UV Lithography Vaccine Platform** |
+| Factor | UV Fragment Vaccine | mRNA Vaccine |
 | --- | --- | --- |
-| **Antigen Format** | Encoded peptides (typically 8–20 aa) | Whole-protein fragments with native PTMs and structures |
-| **Post-Translational Modifications (PTMs)** | Ignored or uncontrolled | Preserved and naturally processed by immune cells |
-| **Antigen Discovery** | Requires prediction from DNA/RNA | Uses actual tumor tissue; empirical representation |
-| **Immune Response** | Weak B cell, Likely Weak MHC I, Strong MHC II | Stronger B cell, Likely Weak MHC I, Unknown MHC II |
-| **Complex Antigen Structures** | Poor at mimicking quaternary or cryptic epitopes | Retains antigen conformation, aiding natural processing |
-| **Tumor Heterogeneity** | Requires precise selection; may miss variants | Captures entire antigenic landscape of the tumor slice |
-| **Practical Output** | Personalized mRNA libraries | Customized, photoprocessed tumor-derived vaccine particles |
-| **Cost** | High: require DNA sequencing and custom synthesis | High upfront, low operational |
+| Antigen Breadth | Broad (includes lipids, glycopeptides, PTMs) | Narrow, selected peptides |
+| Antigen Dose | Low per epitope | High, focused |
+| Reproducibility | Variable across doses | Highly consistent |
+| Tumor Heterogeneity Coverage | Higher | Lower, mitigated via multiplexing |
+| Cost | Potentially much lower | Expensive (personalized synthesis) |
+| Scalability | High (especially globally) | Lower due to cost, IP constraints |
+| CD8+ T cell activation | Relies on APC cross-presentation | Direct and indirect (endogenous and exogenous pathways) |
+| B cell/MHC II Activation | Likely superior due to natural PTMs | More limited unless specifically engineered |
 
-**Discussion – Part IV – mRNA Synergy**
+Detailed Immunologic Differences
 
-**I stand firmly, though more than anything that these are not mutually exclusive strategies that could be used together synergistically.**
+CD8+ T Cells require MHC I presentation of peptides (8–11 aa), which occurs via:
 
-Broad Antigen Presentation from Tumor Fragments: The fragmented tumor material could provide a comprehensive and unbiased source of tumor-associated antigens, including those not predicted or targeted by the mRNA vaccine. This could prime a broad initial immune response against a wide range of potential targets.
+- Endogenous pathway (self-antigens processed in cytosol)
+- Cross-presentation by APCs (external antigens internalized and routed to MHC I)
 
-Focused and Enhanced Response from mRNA: The personalized mRNA vaccine could then be designed to specifically boost the immune response against a select set of highly immunogenic or clinically relevant neoantigens identified through prediction algorithms and potentially validated through analysis of the patient's immune response to the fragment vaccine. This allows for a more focused and amplified attack on key tumor targets.
+mRNA vaccines leverage both routes by encoding optimized sequences for enhanced MHC I binding.
 
-Addressing Antigen Spreading and Evolution: The broad immunity generated by the tumor fragments might help to control tumor cells that lose the specific neoantigens targeted by the mRNA vaccine (antigen escape). The mRNA vaccine could also be updated over time to target newly emerging neoantigens.
+CD4+ T Cells and B Cells, by contrast, interact with MHC II, which presents longer peptides (up to ~25 aa), including glycopeptides and modified proteins. These antigens are processed in lysosomes, a step that likely preserves PTMs better in UV-generated fragments than in engineered mRNA products.
 
-Harnessing Different Immune Mechanisms: The fragmented tumor material might stimulate a broader range of immune responses, including innate immunity and different T-cell subsets, while the mRNA vaccine could be optimized to elicit strong CD8+ T-cell responses against specific intracellular antigens.
+Natural presentation may better reflect tumor antigens in their true biological context, potentially aiding B cell activation, antibody generation, and T helper function.
 
-Improving Antigen Presentation: The UV lithography aspect of your fragment vaccine could potentially be used to optimize the size, shape, or surface properties of the fragments to enhance their uptake and processing by antigen-presenting cells, thereby improving the presentation of all the tumor-derived antigens, including those that might synergize with the mRNA-encoded antigens.
+Final Perspective: Integration, Not Opposition
 
-**Discussion – Part V – Feasibility**
+Both platforms face similar fundamental challenges: immune tolerance to self-antigens, tumor MHC I downregulation, and antigenic drift. Yet each has complementary strengths.
 
-Is this strategy possible?
+- mRNA vaccines offer targeted, potent stimulation and are advancing rapidly with AI integration.
+- UV-fragment-based vaccines provide unmatched antigen diversity, are likely cheaper, and could be more scalable, particularly in low-resource settings.
 
-The two big questions are: Can you initially generate fragments via UV lithography of a certain size that don’t lose their native structure or immediately degrade? Can you keep them stable long enough to be injected? I have a feeling that if you could do both of those things, you would be some sort of immune response.
+Ultimately, combining both strategies—e.g., priming with mRNA, boosting with UV-derived fragments—could provide superior breadth, depth, and durability of immune response.
 
-Since this has never been done, we must attempt to infer its feasibility from existing experimental techniques. Two relevant examples are: (1) the use of UV laser-based cellular dissection in pathology, and (2) the preparation of autologous vaccines using enzymatic and hypertonic cell lysis and their effectiveness.
+**Discussion – Part IV: Feasibility of UV Lithography-Based Cancer Vaccines**
 
-1\. UV Laser Cellular Dissection (Laser Capture Microdissection): "How well does this technique work in producing small sections of the cell?"
+Is this Strategy Technically Possible?
 
-Commentary:
+Two key questions define the feasibility of this approach:
 
-Laser capture microdissection (LCM) is highly effective for isolating individual cells or specific regions of tissue. However, it is typically used for anatomical resolution (e.g., entire cells or nuclei), not biochemical fragmentation. That said, the ability of UV lasers—especially excimer and femtosecond-class systems—to break specific covalent bonds is well-documented in material science and microfabrication. Their precision has not been widely tested for molecular-level fragmentation of proteins in a biological context, but the technology does demonstrate proof-of-principle for spatial precision. \[3\] The challenge will be balancing fragmentation versus denaturation, particularly for preserving MHC-relevant epitopes.
+1. Can UV lithography reliably fragment tumor material into immunologically relevant pieces without causing excessive degradation or denaturation?
+2. Can these fragments be stabilized long enough for processing, storage, and injection—while still retaining native structure or post-translational modifications (PTMs)?
 
-**I firmly believe that you do not need to reduce the size down to 15-20 amino acids which is the length of peptide that MHC molecules present. After phagocytosis, lysosomal processing will do that and select the best antigen candidates. Breaking the cells into bite sized bits is the key.**
+If both challenges can be addressed, it is highly likely that such a vaccine would induce an immune response.
 
-2\. Enzymatic or Hypertonic Autologous Cancer Vaccines: "How well have these lysates been characterized?"
+Although this specific strategy has never been implemented, we can infer feasibility by examining two adjacent technologies:
 
-Commentary:
+1\. UV Laser-Based Cellular Dissection (Laser Capture Microdissection, LCM)
 
-Most enzymatic or osmotic preparations result in highly heterogeneous lysates which have not been extensively characterized. These are difficult to characterize precisely at the peptide or epitope level. Mass spectrometry can detect components, but in complex mixtures like whole-cell lysates, reproducibility and identification of functional antigens are problematic. Furthermore, harsh lysis (e.g., hypertonic shock, detergents) often leads to protein unfolding, aggregation, and loss of post-translational modifications and thus yields little useful information. \[1\] These are critical for immune recognition. In this regard, UV-mediated fragmentation might offer a more controlled, reproducible way to break proteins into immunologically relevant fragments—if scattering and overexposure can be minimized.
+What does this tell us about generating small biological fragments using UV light?
 
-Ultimately, the feasibility depends on how much UV light will scatter through the membrane and cell layers. This is a crucial unknown. UV light at 200–300 nm has shallow penetration depth in biological tissue due to high absorption by proteins and nucleic acids. However, this may be an advantage—by limiting depth, you may effectively fragment material layer by layer, especially in frozen sections.
+LCM is a well-established method for isolating specific cells or microscopic regions of tissue using laser pulses. In pathology, it enables precise anatomical excision—often isolating individual cells, nuclei, or tissue domains—without significant disruption to neighboring regions.
 
-**Future Direction/Initial Experiments**
+However, LCM is primarily a macroscopic technique for tissue anatomy, not a biochemical tool for controlled protein fragmentation. Still, the underlying technologies—particularly excimer and femtosecond UV lasers—are widely used in material science and semiconductor industries for their ability to break covalent bonds with high spatial precision.
 
-Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here. The most notable variables are:  
-\-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature (frozen vs thawed)  
-\-The use of light sonication to break up lightly cut (scored cells)  
-\-Chemical composition of the fragmentation and immediate fragment stabilization buffer  
-\-Other chemical variables: long-term stability (capping vs matrix), immunogenicity enhancement, liposomes
+Inference: While LCM itself doesn't address biochemical fragmentation, UV laser systems clearly offer the mechanical precision and energy control necessary to break down biological material in a spatially resolved manner. The challenge will be tuning parameters (wavelength, pulse duration, energy density) to induce fragmentation without widespread denaturation, which would destroy key epitopes.
 
-The things that seem most promising to me are:  
+Importantly, we likely do not need to fragment all the way down to 8–15 amino acid peptides, which are the sizes presented on MHC I. After phagocytosis, antigen-presenting cells (APCs) will naturally process larger fragments in endolysosomes. The goal is to create “bite-sized” antigen chunks that retain structure and post-translational features for natural immune processing—not to generate final peptide epitopes _ex vivo_.
 
-1) Cutting the slice while frozen under a thin layer of buffer solution. Refreezing that combination and transporting it frozen to the patient. Just before injection, it is thawed and sonicated with additional buffer/chemical capping reagents and then mixed with adjuvants. Being immobilized in a frozen crystal might stabilize the fragments.  
-2) Doing basically the same steps but instead of chemically preserving the fragments you trap them in a glue like a cyanoacrylate. This you can either implant in whole or fragment again for injection.
+2\. Autologous Cancer Vaccines via Enzymatic or Hypertonic Cell Lysis
+
+What can we learn from these existing cancer lysate vaccines?
+
+Autologous lysate-based vaccines, produced by enzymatic digestion, hypertonic shock, or detergent lysis, have been trialed for decades. These methods typically yield highly heterogeneous mixtures of cellular material.
+
+- Drawback #1: The antigen composition is difficult to characterize precisely. In complex lysates, mass spectrometry struggles to resolve and quantify relevant peptides due to signal overlap and limited dynamic range.
+- Drawback #2: These methods often result in protein denaturation, aggregation, and PTM loss, which are crucial for immune recognition, especially for B cells and MHC II-restricted CD4+ T cells.
+
+Inference: Harsh lysis is unpredictable and poorly controlled. UV-mediated fragmentation, if optimized, may provide a more consistent and reproducible method of breaking cells apart while preserving antigenic fidelity—particularly if fragmentation is performed in frozen sections with buffering to limit free radical damage.
+
+Feasibility Bottleneck: UV Penetration and Scattering
+
+A central unknown is how UV light will behave in this application, particularly:
+
+- Scattering and absorption in biological tissue
+- Penetration depth through multiple membrane and cytoplasmic layers
+- Heat diffusion and its impact on protein structure
+
+UV light in the 200–300 nm range (e.g., excimer lasers at 248 nm or 193 nm) has extremely shallow penetration in biological material due to strong absorption by aromatic amino acids and nucleotides. While this limits bulk tissue access, it may actually be beneficial in this context.
+
+Strategic Advantage: Shallow penetration allows layer-by-layer fragmentation, particularly in thin cryosections. With proper stage control and scanning, this may enable the generation of depth-resolved antigen profiles and reduce the risk of overexposure or widespread protein denaturation.
+
+This raises a broader engineering consideration: rather than treating whole tumors in situ, the most viable approach is likely ex vivo laser treatment of thin tumor slices, either from fresh or frozen samples, under carefully buffered and cooled conditions.
+
+Conclusion: Conditional Feasibility
+
+This approach is technically plausible, but success hinges on optimizing three interdependent factors:
+
+1. Fragmentation Energy Control: UV exposure must be sufficient to disrupt cellular and protein structure without erasing key antigenic features.
+2. Spatial Resolution and Penetration: Thin sections and staged exposure may allow fragmentation at subcellular scales with minimal scattering.
+3. Post-Processing Stability: The use of a fragmentation buffer—containing radical quenchers, PTM stabilizers, or cryoprotectants—may be essential for preserving immunogenicity and enabling downstream formulation (e.g., in liposomes or hydrogels).
+
+If these can be achieved, UV lithography–based antigen generation may offer a new and highly adaptable platform for autologous cancer vaccination, with unique advantages in antigen diversity, manufacturing cost, and global scalability.
+
+**Future Directions and Initial Experimental Concepts**
+
+This concept deserves benchtop investigation, as it opens the door to a number of promising and unexplored possibilities. Several experimental variables stand out as particularly important to test in the early phases of development:
+
+- Optical parameters – wavelength, exposure time, and laser scanning patterns (e.g., single grid, intersecting grids, multiple passes)
+- Sample state – processing tissue slices while frozen vs. thawed
+- Mechanical enhancement – applying light sonication after UV exposure to further break apart partially scored cells
+- Buffer chemistry – composition of the fragmentation medium and any immediate stabilization agents
+- Downstream preservation – exploring chemical capping agents, long-term stabilization strategies, immunogenicity enhancement (e.g., adjuvants), and encapsulation options such as liposomes
+
+Most Promising Initial Concepts
+
+1. Frozen-State Lithography with Post-Thaw Processing  
+    One of the most promising strategies may be to laser-fragment the tissue while it remains frozen under a thin layer of buffer. After processing, the sample could be refrozen and transported in that state to the clinic. Immediately prior to injection, the sample would be thawed, lightly sonicated in the presence of stabilizing reagents, and combined with adjuvants. The frozen matrix could help preserve protein structure and reduce unwanted degradation during fragmentation.
+2. Matrix-Embedded Fragmentation for Implant or Reprocessing  
+    A second intriguing possibility is to embed the fragmented material within a stabilizing matrix—such as a biocompatible adhesive or gel. This material could be implanted directly as a depot or further processed (e.g., fragmented again or extracted) prior to injection. This approach may offer additional control over delivery, localization, and immunological presentation.
+
+This early-stage research could inform key design decisions for a novel class of personalized cancer vaccines. With careful optimization of optical, chemical, and physical parameters, this platform has the potential to produce stable, immunogenic antigen fragments in a controlled and reproducible way. A systematic exploration of these variables will be essential to determine the best combination for preserving native structure while maximizing immune activation.
 
 **Works Cited**
 
