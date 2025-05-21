@@ -152,7 +152,7 @@ Pro Tip: Co-encapsulate immune adjuvants (e.g., CpG, MPLA) with your antigens to
 
 As a matter of fact, incorporation of cell membranes of tumor cells into nanoparticles and liposomes has been widely tried as cancer vaccines. \[4\] To the best of my knowledge (and the AI’s) no one has used lithography systems to generate those fragments.
 
-3\. Hydrogel or Matrix-Based Slow Release:
+3\. Hydrogel or Acrylate Matrix-Based Slow Release:
 
 Pros: Sustained antigen presentation mimics a persistent infection, allowing better immune training.
 
@@ -169,7 +169,7 @@ Optional Twist: Use enzymatically responsive hydrogels that degrade in response 
     - A UV laser (e.g., excimer or femtosecond laser) or X ray laser with a photomask is used to create precise antigen fragments by exposing the sample to a predetermined grid pattern.
     - The pathology slice could be cut while frozen or thawed. Like the size of the fragments, this must be determined empirically along with when to introduce the fragmentation buffer.
     - Note that the laser can be used to cut the sample several times. In fact, it could cut the pathology slice, which is then turned into a lysate and cut again.
-3. Fragmentation Buffer: added before or immediately after and contains chemical reagents to prevent recombination.
+3. Fragmentation Buffer: added before irradiation and contains chemical reagents to prevent recombination.
 4. Optional: Thawing and Gentle Sonication to fragment the cut/scored cells.
 5. Optional: Form liposomes through known methods like Azafari method. The buffer solution contains components necessary for liposome formation (triacyl glycerides).
 6. Optional: Collect and optionally filter or centrifuge to isolate desired particle size range.
@@ -178,9 +178,9 @@ Optional Twist: Use enzymatically responsive hydrogels that degrade in response 
 • Use biotin-NHS, PEG-mannose-NHS, or Fc-tagged PEGs during the soak.
 
 • As proteins break apart, their free lysines and N-termini get tagged—simultaneously quenching and targeting the fragments for immunogenicity.  
-• Lock the fragments into a matrix, which you may in fact cut again to get the composite fragments.
+• Lock the fragments into an acrylate matrix with adjuvant.
 
-1. Reinject fragments with adjuvants or pulse autologous dendritic cells (DCs) ex vivo, which are then reintroduced into the patient.
+1. Reinject fragments with adjuvants or pulse autologous dendritic cells (DCs) ex vivo, which are then reintroduced into the patient. If the fragments are locked into an acrylate matrix, then the entire matrix can be implanted. Or it can be fragmented again, and the composite particles injected with the adjuvant.
 2. Immune Activation:  
     • The processed antigens are presented to T cells, initiating an immune response against tumor-specific epitopes.  
     • Co-administered **adjuvants** enhance dendritic cell activation and antigen presentation. A TLR agonist (like CpG DNA, poly-IC, or MPLA) would boost innate immune activation, drawing in antigen-presenting cells. GM-CSF could be injected locally to recruit dendritic cells, ensuring efficient antigen pickup.  
@@ -329,12 +329,15 @@ Ultimately, the feasibility depends on how much UV light will scatter through th
 **Future Direction/Initial Experiments**
 
 Surely benchtop research should be done on this idea. I’ve presented a vast number of possibilities that should be tried here. The most notable variables are:  
-\-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature  
+\-Within the optical system: wavelength, exposure time, different light patterns (one grid, two grids at angles to each other, multiple passes), temperature (frozen vs thawed)  
 \-The use of light sonication to break up lightly cut (scored cells)  
-\-Within the fragmentation buffer: before or after exposure, chemical content  
-\-Chemical variables: stability, immunogenicity, liposomes
+\-Chemical composition of the fragmentation and immediate fragment stabilization buffer  
+\-Other chemical variables: long-term stability (capping vs matrix), immunogenicity enhancement, liposomes
 
-One idea that I would like to see tried is cutting the slice while frozen under a thin layer of buffer solution, and transporting it frozen to the patient. Just before injection, it is thawed and sonicated with additional buffer, reagents and adjuvants. Being immobilized in a frozen crystal might stabilize the fragments.
+The things that seem most promising to me are:  
+
+1) Cutting the slice while frozen under a thin layer of buffer solution. Refreezing that combination and transporting it frozen to the patient. Just before injection, it is thawed and sonicated with additional buffer/chemical capping reagents and then mixed with adjuvants. Being immobilized in a frozen crystal might stabilize the fragments.  
+2) Doing basically the same steps but instead of chemically preserving the fragments you trap them in a glue like a cyanoacrylate. This you can either implant in whole or fragment again for injection.
 
 **Works Cited**
 
